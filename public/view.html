@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasapalabra - VIEW</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container-view">
+        <!-- Columna Izquierda: Ranking -->
+        <div class="ranking-side">
+            <div id="ranking-container" class="definition-box" style="width: 100%; padding: 15px;">
+                <div class="definition-label" style="font-size: 1.2rem; margin-bottom: 10px;">🏆 Ranking de Rondas</div>
+                <div id="ranking-list" style="text-align: left; font-size: 0.9rem; font-family: 'Open Sans', sans-serif;">
+                    <p style="text-align: center; opacity: 0.6;">No hay partidas registradas.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Columna Derecha: Juego -->
+        <div class="player-side">
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="score-label">Aciertos</span>
+                    <span id="success-count" class="score-value" style="color: #28a745;">0</span>
+                </div>
+                <div style="width: 1px; background: rgba(255,255,255,0.15);"></div>
+                <div class="score-item">
+                    <span class="score-label">Fallos</span>
+                    <span id="error-count" class="score-value" style="color: #dc3545;">0</span>
+                </div>
+            </div>
+
+            <div class="rosco-panel" id="rosco">
+                <div class="timer-display" id="time-left">150</div>
+            </div>
+
+            <!-- Caja Principal para la Definición de la palabra -->
+            <div class="definition-box" style="width: 100%; max-width: 500px; text-align: center;">
+                <div class="definition-label" id="view-def-label">Estado</div>
+                <div id="view-question-text">Esperando al Host...</div>
+            </div>
+
+            <!-- Caja dedicada para la Pista (solo se muestra cuando se revela) -->
+            <div class="player-clue-box" id="clue-box" style="display: none;">
+                <div class="player-clue-title">🔍 Pista revelada</div>
+                <div class="player-clue-content" id="clue-display"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="view.js"></script>
+</body>
+</html>

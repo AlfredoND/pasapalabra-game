@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasapalabra - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .choice-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .choice-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: var(--text-color);
+            width: 200px;
+            transition: transform 0.2s;
+        }
+        .choice-card:hover { transform: translateY(-5px); }
+        .choice-card h2 { color: var(--primary); margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Pasapalabra Dual Screen</h1>
+        <p>Selecciona tu rol para comenzar:</p>
+        <div class="choice-container">
+            <a href="host.html" class="choice-card">
+                <h2>HOST</h2>
+                <p>Controles, preguntas y gestión del juego.</p>
+            </a>
+            <a href="view.html" target="_blank" class="choice-card">
+                <h2>VIEW</h2>
+                <p>Pantalla del rosco para los jugadores/público.</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasapalabra - HOST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="control-panel">
+            <header>
+                <h1 style="font-family: 'Montserrat', sans-serif; text-align: center; margin-bottom: 20px;">HOST PANEL</h1>
+            </header>
+
+            <div class="score-board" style="margin-bottom: 20px; max-width: 100%;">
+                <div class="score-item">
+                    <span class="score-label">Aciertos</span>
+                    <span id="score-success" class="score-value" style="color: #28a745;">0</span>
+                </div>
+                <div style="width: 1px; background: rgba(255,255,255,0.15);"></div>
+                <div class="score-item">
+                    <span class="score-label">Fallos</span>
+                    <span id="score-fail" class="score-value" style="color: #dc3545;">0</span>
+                </div>
+            </div>
+
+            <div class="definition-box">
+                <div class="definition-label" id="def-label">Estado</div>
+                <div id="question-text">Configura la partida y pulsa "Iniciar Juego".</div>
+            </div>
+
+            <div class="secret-info-container" id="secret-info-container" style="display: none;">
+                <div class="solution-box" id="solution-container">
+                    <span>Solución: <span class="solution-text" id="solution-text">PALABRA</span></span>
+                    <button class="btn-reveal" id="btn-reveal">Revelar Solución</button>
+                </div>
+                <div class="solution-box" id="clue-control-container">
+                    <span>Pista: <span class="solution-text" id="secret-clue-text" style="color: #93c5fd; font-style: italic;">PISTA</span></span>
+                    <button class="btn-reveal" id="btn-reveal-clue">Revelar Pista</button>
+                </div>
+            </div>
+
+            <div id="controls" style="display: none;">
+                <div class="action-buttons">
+                    <button class="action-btn btn-success" id="send-btn">Correcto</button>
+                    <button class="action-btn btn-danger" id="fail-btn">Incorrecto</button>
+                    <button class="action-btn btn-warning" id="pasapalabra-btn">Pasapalabra</button>
+                    <button class="action-btn btn-warning" id="pause-btn">Pausar</button>
+                    <button class="action-btn" id="stop-btn" style="grid-column: span 2; background-color: #4a5568; color: white;">Detener Juego</button>
+                </div>
+            </div>
+            
+            <div class="setup-panel" id="setup-area">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                    <label>Tiempo (seg):</label>
+                    <input type="number" id="game-time-input" value="150" min="10" max="600">
+                </div>
+                <div style="display: flex; gap: 10px; margin-top: 10px;">
+                    <button class="btn-start" id="start-btn" style="flex: 2; display: none;">Iniciar Juego</button>
+                    <button class="btn-reveal" id="cancel-btn" style="flex: 1; border-radius: 14px; font-weight: 800; text-transform: uppercase;">Cancelar</button>
+                </div>
+            </div>
+
+            <div id="result-modal" class="modal" style="display: none;">
+                <div class="modal-content" style="color: black; text-align: center;">
+                    <h2>Juego Finalizado</h2>
+                    <p id="final-stats"></p>
+                    <button class="btn-start" id="restart-btn" style="width: 100%; margin-top: 20px;">Reiniciar</button>
+                </div>
+            </div>
+
+            <a href="view.html" target="_blank" style="text-align: center; display: block; margin-top: 20px; color: #93c5fd; text-decoration: none; font-size: 14px;">Abrir Pantalla de Visualización</a>
+            <a href="mobile-host.html" target="_blank" style="text-align: center; display: block; margin-top: 10px; color: #6ee7b7; text-decoration: none; font-size: 14px;">Abrir Host Remoto (Móvil)</a>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="host.js"></script>
+</body>
+</html>

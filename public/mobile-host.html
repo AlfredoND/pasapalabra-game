@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pasapalabra - Mobile Host</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blue-dark: #001529;
+            --blue-bright: #007bff;
+            --green: #28a745;
+            --red: #dc3545;
+            --gold: #ffbb33;
+            --white: #ffffff;
+            --gray: #4a5568;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--blue-dark);
+            color: var(--white);
+            font-family: 'Open Sans', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        header {
+            text-align: center;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: space-around;
+            background: rgba(255,255,255,0.05);
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-label {
+            display: block;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: #93c5fd;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .stat-value {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        .info-card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 5px solid var(--blue-bright);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .info-group {
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 10px;
+        }
+
+        .info-group:last-child {
+            border-bottom: none;
+        }
+
+        .label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: #93c5fd;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .content {
+            font-size: 1.1rem;
+            line-height: 1.4;
+            font-weight: 600;
+        }
+
+        .answer-text {
+            color: var(--gold);
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .clue-text {
+            font-style: italic;
+            color: #e2e8f0;
+        }
+
+        .status-msg {
+            text-align: center;
+            padding: 10px;
+            font-style: italic;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.7rem;
+            opacity: 0.5;
+            margin-top: auto;
+            padding: 10px;
+        }
+
+        #game-off-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--blue-dark);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .btn-refresh {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: var(--blue-bright);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-off-screen">
+        <h2 style="font-family: 'Montserrat', sans-serif;">Esperando Partida</h2>
+        <p style="margin-top: 10px; opacity: 0.8;">Inicia el juego desde la PC principal para ver la información aquí.</p>
+        <button class="btn-refresh" onclick="location.reload()">Reconectar</button>
+    </div>
+
+    <header>
+        <h1>Host Remoto</h1>
+    </header>
+
+    <div class="stats-bar">
+        <div class="stat-item">
+            <span class="stat-label">Aciertos</span>
+            <span id="score" class="stat-value" style="color: var(--green);">0</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Tiempo</span>
+            <span id="timer" class="stat-value">0</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Fallos</span>
+            <span id="errors" class="stat-value" style="color: var(--red);">0</span>
+        </div>
+    </div>
+
+    <div class="info-card">
+        <div class="info-group">
+            <span class="label" id="letter-label">Letra</span>
+            <div class="content" id="definition">Cargando definición...</div>
+        </div>
+        <div class="info-group">
+            <span class="label">Respuesta</span>
+            <div class="content answer-text" id="answer">---</div>
+        </div>
+        <div class="info-group">
+            <span class="label">Pista</span>
+            <div class="content clue-text" id="clue">---</div>
+        </div>
+    </div>
+
+    <div class="status-msg" id="status">Sincronizado con el servidor</div>
+
+    <div class="footer-note">
+        Este panel es solo informativo. Controla el juego desde la PC principal.
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        
+        const scoreEl = document.getElementById('score');
+        const errorsEl = document.getElementById('errors');
+        const timerEl = document.getElementById('timer');
+        const letterEl = document.getElementById('letter-label');
+        const definitionEl = document.getElementById('definition');
+        const answerEl = document.getElementById('answer');
+        const clueEl = document.getElementById('clue');
+        const offScreen = document.getElementById('game-off-screen');
+        const statusEl = document.getElementById('status');
+
+        socket.on('state_updated', (state) => {
+            if (state.gameActive) {
+                offScreen.style.display = 'none';
+                
+                scoreEl.textContent = state.score;
+                errorsEl.textContent = state.errors;
+                timerEl.textContent = state.timeLeft;
+                
+                if (state.isPaused) {
+                    statusEl.textContent = "JUEGO EN PAUSA";
+                    statusEl.style.color = "#ffbb33";
+                } else {
+                    statusEl.textContent = "Partida en curso";
+                    statusEl.style.color = "#ffffff";
+                }
+
+                letterEl.textContent = state.tipo || "Pregunta";
+                definitionEl.textContent = state.definicion || "---";
+                
+                // En el Host Remoto mostramos la respuesta y pista SIEMPRE (para el presentador)
+                // Obtenemos los datos extendidos del estado si están disponibles
+                // Nota: El estado actual enviado por host.js ya incluye 'clue'
+                clueEl.textContent = state.clue || "Sin pista";
+                
+                // Para la respuesta, como host.js no la envía en el broadcast por seguridad del viewer,
+                // vamos a sugerir al usuario que la incluya en el broadcast o la manejaremos si se añade.
+                answerEl.textContent = state.respuesta || "(Ver en PC)";
+            } else {
+                offScreen.style.display = 'flex';
+            }
+        });
+
+        socket.on('connect', () => {
+            statusEl.textContent = "Conectado";
+        });
+
+        socket.on('disconnect', () => {
+            statusEl.textContent = "Desconectado";
+            statusEl.style.color = "#dc3545";
+        });
+    </script>
+</body>
+</html>

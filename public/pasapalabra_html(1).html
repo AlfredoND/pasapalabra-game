@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasapalabra - Modo Presentador con JSON y Pistas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blue-dark: #001529;
+            --blue-bright: #007bff;
+            --green: #28a745;
+            --red: #dc3545;
+            --gold: #ffbb33;
+            --white: #ffffff;
+            --gray: #4a5568;
+            --panel-bg: rgba(15, 23, 42, 0.45);
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: radial-gradient(circle at center, #1e3a8a 0%, var(--blue-dark) 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--white);
+            padding: 20px;
+        }
+
+        .game-container {
+            background: var(--panel-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 32px;
+            padding: 40px;
+            width: 100%;
+            max-width: 1150px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 40px;
+            align-items: stretch;
+        }
+
+        /* COLUMNA IZQUIERDA: PANTALLA DEL JUGADOR */
+        .player-side {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding-right: 20px;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .score-board {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 380px;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 12px 24px;
+            border-radius: 18px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 16px;
+            border: 1.5px solid rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .score-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .score-label {
+            font-size: 11px;
+            color: #93c5fd;
+            font-weight: 600;
+        }
+
+        .score-value {
+            font-size: 24px;
+        }
+
+        /* El Rosco Circular */
+        .rosco-panel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 380px;
+            height: 380px;
+            margin: auto;
+        }
+
+        .timer-display {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 44px;
+            font-weight: 800;
+            background: #0b1329;
+            border: 4px solid var(--white);
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 30px rgba(0, 123, 255, 0.4);
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+
+        .timer-low {
+            border-color: var(--red);
+            color: var(--red);
+            box-shadow: 0 0 30px rgba(220, 53, 69, 0.6);
+            animation: pulse 1s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+
+        .letter-node {
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            background-color: var(--blue-bright);
+            border: 2px solid var(--white);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            user-select: none;
+        }
+
+        .letter-node.active {
+            transform: scale(1.35);
+            box-shadow: 0 0 20px var(--white);
+            background-color: #00bfff;
+            z-index: 5;
+        }
+
+        .letter-node.success {
+            background-color: var(--green);
+            border-color: #d4edda;
+        }
+
+        .letter-node.fail {
+            background-color: var(--red);
+            border-color: #f8d7da;
+        }
+
+        /* Caja de Pistas (Fila inferior del jugador) */
+        .player-clue-box {
+            width: 100%;
+            max-width: 380px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 14px;
+            padding: 15px;
+            text-align: center;
+            min-height: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .player-clue-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 4px;
+            letter-spacing: 1px;
+        }
+
+        .player-clue-content {
+            font-size: 14px;
+            font-weight: 600;
+            color: #e2e8f0;
+            font-style: italic;
+        }
+
+        /* COLUMNA DERECHA: CONTROLES DEL PRESENTADOR */
+        .control-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 100%;
+            justify-content: center;
+        }
+
+        .definition-box {
+            background: rgba(0, 0, 0, 0.35);
+            border-left: 6px solid var(--blue-bright);
+            padding: 24px;
+            border-radius: 16px;
+            min-height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 18px;
+            line-height: 1.6;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .definition-label {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 14px;
+            color: #93c5fd;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        /* Bloque de Respuesta y Pistas Ocultas */
+        .secret-info-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .solution-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 16px;
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .solution-text {
+            filter: blur(5px);
+            transition: filter 0.2s;
+            color: var(--gold);
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 2px;
+        }
+
+        .solution-box.revealed .solution-text {
+            filter: blur(0);
+        }
+
+        .btn-reveal {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            padding: 6px 12px;
+            font-size: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            border: none;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn-reveal:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .btn-reveal.active-green {
+            background: var(--green);
+        }
+
+        /* Botonera de Acción Directa */
+        .action-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        button.action-btn {
+            padding: 18px 10px;
+            font-size: 16px;
+            font-weight: 700;
+            border: none;
+            border-radius: 14px;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        button.action-btn:active {
+            transform: scale(0.97);
+        }
+
+        .btn-success { background: var(--green); color: white; }
+        .btn-success:hover { background: #218838; box-shadow: 0 0 15px rgba(40, 167, 69, 0.4); }
+
+        .btn-danger { background: var(--red); color: white; }
+        .btn-danger:hover { background: #c82333; box-shadow: 0 0 15px rgba(220, 53, 69, 0.4); }
+
+        .btn-warning {
+            background: var(--gold);
+            color: #1a202c;
+            grid-column: span 2;
+        }
+        .btn-warning:hover { background: #e0a800; box-shadow: 0 0 15px rgba(255, 187, 51, 0.4); }
+
+        /* Panel de Configuración de Tiempo y JSON */
+        .setup-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 24px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .setup-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .time-input-group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .time-input-group label {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .json-input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .json-input-group label {
+            font-size: 13px;
+            font-weight: 600;
+            color: #93c5fd;
+        }
+
+        textarea {
+            width: 100%;
+            height: 160px;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 8px;
+            color: #6ee7b7;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 12px;
+            padding: 10px;
+            resize: vertical;
+            outline: none;
+        }
+
+        textarea:focus {
+            border-color: var(--blue-bright);
+        }
+
+        .json-error-msg {
+            color: #fca5a5;
+            font-size: 12px;
+            background: rgba(220, 53, 69, 0.15);
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid rgba(220, 53, 69, 0.3);
+            display: none;
+        }
+
+        input[type="number"] {
+            width: 80px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            background: rgba(0,0,0,0.3);
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            outline: none;
+        }
+
+        input[type="number"]:focus {
+            border-color: var(--blue-bright);
+        }
+
+        .btn-start {
+            background: var(--white);
+            color: var(--blue-dark);
+            width: 100%;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: 800;
+            border-radius: 14px;
+            border: none;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.2s;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+        }
+
+        .btn-start:hover {
+            background: var(--blue-bright);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .reset-btn-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .btn-reset-json {
+            background: transparent;
+            border: none;
+            color: #94a3b8;
+            font-size: 11px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .btn-reset-json:hover {
+            color: var(--white);
+        }
+
+        @media (max-width: 850px) {
+            .game-container {
+                grid-template-columns: 1fr;
+                padding: 24px;
+                gap: 30px;
+            }
+            .player-side {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                padding-right: 0;
+                padding-bottom: 25px;
+            }
+            .rosco-panel {
+                width: 320px;
+                height: 320px;
+            }
+            .letter-node {
+                width: 32px;
+                height: 32px;
+                font-size: 13px;
+            }
+            .timer-display {
+                width: 100px;
+                height: 100px;
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="game-container">
+        <!-- COLUMNA IZQUIERDA: PANTALLA DEL JUGADOR (ROCO + MARCADOR SUPERIOR + PISTA) -->
+        <div class="player-side">
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="score-label">Aciertos</span>
+                    <span id="score-success" class="score-value" style="color: #28a745;">0</span>
+                </div>
+                <div style="width: 1px; background: rgba(255,255,255,0.15);"></div>
+                <div class="score-item">
+                    <span class="score-label">Fallos</span>
+                    <span id="score-fail" class="score-value" style="color: #dc3545;">0</span>
+                </div>
+            </div>
+
+            <div class="rosco-panel" id="rosco">
+                <div class="timer-display" id="timer">150</div>
+            </div>
+
+            <!-- Caja donde el jugador verá la pista -->
+            <div class="player-clue-box">
+                <div class="player-clue-title">🔍 Pista para el jugador</div>
+                <div class="player-clue-content" id="player-clue-display">La pista aparecerá aquí cuando el presentador la revele.</div>
+            </div>
+        </div>
+
+        <!-- COLUMNA DERECHA: MANDOS DEL PRESENTADOR (DEFINICIONES, CONTROL Y SETUP) -->
+        <div class="control-panel">
+            <!-- Caja de definición de la palabra -->
+            <div class="definition-box">
+                <div class="definition-label" id="def-label">Estado</div>
+                <div id="definition-text">
+                    Configura el tiempo y el JSON de palabras abajo, luego haz clic en "Iniciar Juego" para comenzar la partida en directo.
+                </div>
+            </div>
+
+            <!-- Contenedor secreto del presentador (Solución y Pista) -->
+            <div class="secret-info-container" id="secret-info-container" style="display: none;">
+                <!-- Solución -->
+                <div class="solution-box" id="solution-container">
+                    <span>Solución: <span class="solution-text" id="solution-text">PALABRA</span></span>
+                    <button class="btn-reveal" id="btn-reveal" onclick="toggleReveal()">Revelar Solución</button>
+                </div>
+                <!-- Pista -->
+                <div class="solution-box" id="clue-control-container">
+                    <span>Pista del término: <span id="secret-clue-text" style="color: #93c5fd; font-style: italic; margin-left: 5px;">PISTA</span></span>
+                    <button class="btn-reveal" id="btn-reveal-clue" onclick="toggleRevealClue()">Revelar Pista</button>
+                </div>
+            </div>
+
+            <!-- Área de Control del Presentador (Botones Directos) -->
+            <div class="input-group" id="interactive-area" style="display: none;">
+                <div class="action-buttons">
+                    <button class="action-btn btn-success" onclick="markResult(true)">🟢 Correcto</button>
+                    <button class="action-btn btn-danger" onclick="markResult(false)">🔴 Incorrecto</button>
+                    <button class="action-btn btn-warning" onclick="pasapalabra()">🔵 Pasapalabra</button>
+                </div>
+            </div>
+            
+            <!-- Setup del Juego Inicial -->
+            <div class="setup-panel" id="setup-panel">
+                <div class="setup-title">Ajustes de partida</div>
+                <div class="time-input-group">
+                    <label for="initial-time">Tiempo total (seg):</label>
+                    <input type="number" id="initial-time" value="150" min="10" max="600">
+                </div>
+                
+                <div class="json-input-group">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <label for="json-dataset">Palabras del juego (Formato JSON):</label>
+                        <button class="btn-reset-json" onclick="resetDefaultJson()">Restablecer por defecto</button>
+                    </div>
+                    <textarea id="json-dataset" spellcheck="false"></textarea>
+                    <div class="json-error-msg" id="json-error">JSON inválido. Por favor, comprueba el formato.</div>
+                </div>
+
+                <button class="btn-start" onclick="startGame()">Iniciar Juego</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Dataset por defecto estructurado con el campo "clue" (pista)
+        const defaultDataset = [
+            { "letter": "A", "type": "Empieza por A", "definition": "Planta de tronco leñoso y elevado que se ramifica a cierta altura del suelo.", "answer": "ARBOL", "clue": "Tiene hojas y ramas donde cantan los pájaros." },
+            { "letter": "B", "type": "Empieza por B", "definition": "Estructura o embarcación flotante utilizada para transportar personas o cosas por agua.", "answer": "BARCO", "clue": "Navega por el océano." },
+            { "letter": "C", "type": "Empieza por C", "definition": "Establecimiento comercial donde se sirven bebidas y comidas ligeras.", "answer": "CAFETERIA", "clue": "Huele a café por las mañanas." },
+            { "letter": "D", "type": "Empieza por D", "definition": "Cubo pequeño cuyas caras están marcadas con puntos de uno a seis.", "answer": "DADO", "clue": "Se lanza en juegos como el Parchís." },
+            { "letter": "E", "type": "Empieza por E", "definition": "Cuerpo celeste que brilla en el cielo con luz propia.", "answer": "ESTRELLA", "clue": "La más cercana a la Tierra es el Sol." },
+            { "letter": "F", "type": "Empieza por F", "definition": "Reunión de personas para celebrar un acontecimiento o divertirse.", "answer": "FIESTA", "clue": "Hay música, globos y a veces tarta." },
+            { "letter": "G", "type": "Empieza por G", "definition": "Animal felino doméstico muy común como mascota.", "answer": "GATO", "clue": "Hace miau." },
+            { "letter": "H", "type": "Empieza por H", "definition": "Sustancia sólida, cristalina y fría en la que se transforma el agua por congelación.", "answer": "HIELO", "clue": "Se derrite al sol." },
+            { "letter": "I", "type": "Empieza por I", "definition": "Porción de tierra rodeada de agua por todas partes.", "answer": "ISLA", "clue": "Robinson Crusoe vivió en una." },
+            { "letter": "J", "type": "Empieza por J", "definition": "Persona que dirige un juego o competición y aplica el reglamento.", "answer": "JUEZ", "clue": "Utiliza un mazo en los tribunales." },
+            { "letter": "L", "type": "Empieza por L", "definition": "Satélite natural de la Tierra que brilla de noche.", "answer": "LUNA", "clue": "Tiene fases como menguante o llena." },
+            { "letter": "M", "type": "Empieza por M", "definition": "Masa de agua salada que cubre la mayor parte de la superficie de la Tierra.", "answer": "MAR", "clue": "Hay olas y arena en su orilla." },
+            { "letter": "N", "type": "Empieza por N", "definition": "Masa visible de vapor acuoso suspendida en la atmósfera.", "answer": "NUBE", "clue": "Cuando están muy grises llueve." },
+            { "letter": "O", "type": "Empieza por O", "definition": "Órgano de la vista en el ser humano y los animales.", "answer": "OJO", "clue": "Parpadea y tiene pestañas." },
+            { "letter": "P", "type": "Empieza por P", "definition": "Establecimiento donde se hace y se vende pan.", "answer": "PANADERIA", "clue": "Huele delicioso a masa horneada temprano." },
+            { "letter": "Q", "type": "Empieza por Q", "definition": "Alimento sólido obtenido por maduración de la cuajada de la leche.", "answer": "QUESO", "clue": "Le gusta mucho a los ratones." },
+            { "letter": "R", "type": "Empieza por R", "definition": "Corriente natural de agua continua que desemboca en otra o en el mar.", "answer": "RIO", "clue": "El Amazonas es el más largo." },
+            { "letter": "S", "type": "Empieza por S", "definition": "Estrella luminosa alrededor de la cual gira la Tierra.", "answer": "SOL", "clue": "Nos da calor durante el día." },
+            { "letter": "T", "type": "Empieza por T", "definition": "Aparato receptor de imágenes y sonidos transmitidos a distancia.", "answer": "TELEVISION", "clue": "Tiene canales y control remoto." },
+            { "letter": "U", "type": "Empieza por U", "definition": "Fruto de la vid, redondo y jugoso, usado para hacer vino.", "answer": "UVA", "clue": "Se comen doce en Nochebuena/Año Nuevo." },
+            { "letter": "V", "type": "Empieza por V", "definition": "Corriente de aire producida en la atmósfera por causas naturales.", "answer": "VIENTO", "clue": "Mueve las hojas del otoño y los molinos." },
+            { "letter": "Z", "type": "Empieza por Z", "definition": "Calzado que cubre el pie y tiene una suela de cuero u otra materia.", "answer": "ZAPATO", "clue": "Te lo pones antes de salir a caminar." }
+        ];
+
+        let dataset = [];
+        let currentIndex = 0;
+        let timeLeft = 150;
+        let timerInterval;
+        let gameActive = false;
+        let isRevealed = false;
+        let isClueRevealed = false;
+
+        // Cargar JSON por defecto en el textarea al iniciar
+        function initJsonTextarea() {
+            document.getElementById('json-dataset').value = JSON.stringify(defaultDataset, null, 2);
+        }
+
+        function resetDefaultJson() {
+            document.getElementById('json-dataset').value = JSON.stringify(defaultDataset, null, 2);
+            document.getElementById('json-error').style.display = 'none';
+        }
+
+        // Generar el círculo visual del Rosco
+        function createRosco() {
+            const rosco = document.getElementById('rosco');
+            // Eliminar letras previas si existen
+            const existingNodes = rosco.querySelectorAll('.letter-node');
+            existingNodes.forEach(node => node.remove());
+
+            const total = dataset.length;
+            if (total === 0) return;
+            
+            // Ajustar radio según tamaño de pantalla
+            const isSmallScreen = window.innerWidth <= 850;
+            const radius = isSmallScreen ? 115 : 155; 
+            const centerOffset = isSmallScreen ? 160 : 190;
+            const nodeOffset = isSmallScreen ? 16 : 19;
+
+            dataset.forEach((item, index) => {
+                const node = document.createElement('div');
+                node.className = 'letter-node';
+                node.id = `node-${index}`;
+                node.innerText = item.letter;
+
+                // Calcular posición matemática en círculo
+                const angle = (index / total) * 2 * Math.PI - Math.PI / 2;
+                const x = Math.round(centerOffset + radius * Math.cos(angle)) - nodeOffset;
+                const y = Math.round(centerOffset + radius * Math.sin(angle)) - nodeOffset;
+
+                node.style.left = `${x}px`;
+                node.style.top = `${y}px`;
+                rosco.appendChild(node);
+            });
+        }
+
+        // Rediseñar el rosco al redimensionar pantalla para mantener responsividad perfecta
+        window.addEventListener('resize', () => {
+            if (dataset.length > 0) {
+                createRosco();
+                if (gameActive) {
+                    dataset.forEach((item, index) => {
+                        const node = document.getElementById(`node-${index}`);
+                        if (item.status === 'success') node.classList.add('success');
+                        if (item.status === 'fail') node.classList.add('fail');
+                    });
+                    document.getElementById(`node-${currentIndex}`).classList.add('active');
+                }
+            }
+        });
+
+        function startGame() {
+            if (gameActive) return;
+
+            // Intentar procesar el JSON personalizado del presentador
+            const jsonText = document.getElementById('json-dataset').value;
+            try {
+                const parsedDataset = JSON.parse(jsonText);
+                if (!Array.isArray(parsedDataset) || parsedDataset.length === 0) {
+                    throw new Error("El JSON debe ser un array con al menos un elemento.");
+                }
+                
+                // Validar que cada elemento tenga lo mínimo requerido
+                parsedDataset.forEach((item, idx) => {
+                    if (!item.letter || !item.type || !item.definition || !item.answer) {
+                        throw new Error(`El elemento en el índice ${idx} no tiene todos los campos obligatorios (letter, type, definition, answer).`);
+                    }
+                });
+
+                // Si la validación es correcta, asignamos el dataset
+                dataset = parsedDataset;
+                document.getElementById('json-error').style.display = 'none';
+            } catch (err) {
+                const errorBox = document.getElementById('json-error');
+                errorBox.innerText = `Error en el JSON: ${err.message}`;
+                errorBox.style.display = 'block';
+                return;
+            }
+            
+            // Ajustar tiempo desde el input
+            const timeInput = document.getElementById('initial-time').value;
+            timeLeft = parseInt(timeInput) || 150;
+            
+            gameActive = true;
+            currentIndex = 0;
+            isRevealed = false;
+            isClueRevealed = false;
+            
+            // Reiniciar estados de los ítems cargados
+            dataset.forEach(item => item.status = 'pending');
+            
+            // Recrear rosco con las nuevas palabras del JSON
+            createRosco();
+
+            // Actualizar Interfaz
+            document.querySelectorAll('.letter-node').forEach(n => n.className = 'letter-node');
+            document.getElementById('score-success').innerText = '0';
+            document.getElementById('score-fail').innerText = '0';
+            
+            document.getElementById('interactive-area').style.display = 'block';
+            document.getElementById('secret-info-container').style.display = 'grid';
+            document.getElementById('setup-panel').style.display = 'none';
+            
+            const timerEl = document.getElementById('timer');
+            timerEl.classList.remove('timer-low');
+            timerEl.innerText = timeLeft;
+
+            updateQuestion();
+            startTimer();
+        }
+
+        function startTimer() {
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                const timerEl = document.getElementById('timer');
+                timerEl.innerText = timeLeft;
+                
+                if (timeLeft <= 20) {
+                    timerEl.classList.add('timer-low');
+                }
+                
+                if (timeLeft <= 0) {
+                    endGame("¡Se agotó el tiempo!");
+                }
+            }, 1000);
+        }
+
+        function updateQuestion() {
+            let startPos = currentIndex;
+            while (dataset[currentIndex].status !== 'pending') {
+                currentIndex = (currentIndex + 1) % dataset.length;
+                if (currentIndex === startPos && dataset[currentIndex].status !== 'pending') {
+                    endGame("¡Se ha completado todo el rosco!");
+                    return;
+                }
+            }
+
+            hideReveal();
+            hideClue();
+
+            document.querySelectorAll('.letter-node').forEach(n => n.classList.remove('active'));
+            document.getElementById(`node-${currentIndex}`).classList.add('active');
+
+            const currentItem = dataset[currentIndex];
+            document.getElementById('def-label').innerText = currentItem.type;
+            document.getElementById('definition-text').innerText = currentItem.definition;
+            document.getElementById('solution-text').innerText = currentItem.answer;
+            document.getElementById('secret-clue-text').innerText = currentItem.clue || "No disponible";
+        }
+
+        function markResult(isCorrect) {
+            const currentItem = dataset[currentIndex];
+            const node = document.getElementById(`node-${currentIndex}`);
+            
+            if (isCorrect) {
+                currentItem.status = 'success';
+                node.classList.add('success');
+                document.getElementById('score-success').innerText = parseInt(document.getElementById('score-success').innerText) + 1;
+            } else {
+                currentItem.status = 'fail';
+                node.classList.add('fail');
+                document.getElementById('score-fail').innerText = parseInt(document.getElementById('score-fail').innerText) + 1;
+            }
+
+            nextTurn();
+        }
+
+        function pasapalabra() {
+            document.getElementById(`node-${currentIndex}`).classList.remove('active');
+            currentIndex = (currentIndex + 1) % dataset.length;
+            updateQuestion();
+        }
+
+        function nextTurn() {
+            const pendingQuestions = dataset.filter(q => q.status === 'pending').length;
+            if (pendingQuestions === 0) {
+                endGame("¡Felicidades! Se han respondido todas las letras.");
+            } else {
+                currentIndex = (currentIndex + 1) % dataset.length;
+                updateQuestion();
+            }
+        }
+
+        // --- FUNCIONALIDADES REVELAR SOLUCIÓN ---
+        function toggleReveal() {
+            const solContainer = document.getElementById('solution-container');
+            const btn = document.getElementById('btn-reveal');
+            isRevealed = !isRevealed;
+            if (isRevealed) {
+                solContainer.classList.add('revealed');
+                btn.innerText = "Ocultar Solución";
+            } else {
+                solContainer.classList.remove('revealed');
+                btn.innerText = "Revelar Solución";
+            }
+        }
+
+        function hideReveal() {
+            isRevealed = false;
+            document.getElementById('solution-container').classList.remove('revealed');
+            document.getElementById('btn-reveal').innerText = "Revelar Solución";
+        }
+
+        // --- FUNCIONALIDADES REVELAR PISTA ---
+        function toggleRevealClue() {
+            const btn = document.getElementById('btn-reveal-clue');
+            const playerClueEl = document.getElementById('player-clue-display');
+            const currentItem = dataset[currentIndex];
+
+            isClueRevealed = !isClueRevealed;
+            if (isClueRevealed) {
+                btn.innerText = "Ocultar Pista";
+                btn.classList.add('active-green');
+                playerClueEl.innerText = currentItem.clue || "No hay una pista definida para esta palabra.";
+            } else {
+                btn.innerText = "Revelar Pista";
+                btn.classList.remove('active-green');
+                playerClueEl.innerText = "La pista aparecerá aquí cuando el presentador la revele.";
+            }
+        }
+
+        function hideClue() {
+            isClueRevealed = false;
+            const btn = document.getElementById('btn-reveal-clue');
+            btn.innerText = "Revelar Pista";
+            btn.classList.remove('active-green');
+            document.getElementById('player-clue-display').innerText = "La pista aparecerá aquí cuando el presentador la revele.";
+        }
+
+        function endGame(message) {
+            clearInterval(timerInterval);
+            gameActive = false;
+            
+            document.getElementById('interactive-area').style.display = 'none';
+            document.getElementById('secret-info-container').style.display = 'none';
+            document.getElementById('setup-panel').style.display = 'flex';
+            
+            const finalSuccess = document.getElementById('score-success').innerText;
+            const finalFails = document.getElementById('score-fail').innerText;
+            
+            document.getElementById('def-label').innerText = "Fin de partida";
+            document.getElementById('definition-text').innerHTML = `<strong>${message}</strong><br><br>Marcador Final:<br>⭐ Aciertos: ${finalSuccess}<br>❌ Fallos: ${finalFails}`;
+            document.querySelectorAll('.letter-node').forEach(n => n.classList.remove('active'));
+            hideClue();
+        }
+
+        // Atajos de teclado para el presentador
+        document.addEventListener('keydown', function(event) {
+            if (!gameActive) return;
+            if (event.key === 'ArrowUp') {
+                markResult(true);
+            } else if (event.key === 'ArrowDown') {
+                markResult(false);
+            } else if (event.key === 'ArrowRight' || event.key === ' ') {
+                event.preventDefault();
+                pasapalabra();
+            } else if (event.key === 's' || event.key === 'S') {
+                toggleReveal();
+            } else if (event.key === 'p' || event.key === 'P') {
+                toggleRevealClue();
+            }
+        });
+
+        window.onload = function() {
+            initJsonTextarea();
+            // Cargar el rosco inicial por defecto
+            dataset = defaultDataset;
+            createRosco();
+        };
+    </script>
+</body>
+</html>

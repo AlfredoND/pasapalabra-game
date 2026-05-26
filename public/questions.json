@@ -1,0 +1,1615 @@
+[
+  {
+    "letter": "A",
+    "questions": [
+      {
+        "tipo": "Empieza por A",
+        "definicion": "Lugar del establecimiento donde se realizan actos, charlas o presentaciones",
+        "respuesta": "AUDITORIO",
+        "pista": "Tiene muchas butacas y es donde nos reunimos para las licenciaturas o charlas importantes."
+      },
+      {
+        "tipo": "Empieza por A",
+        "definicion": "Especialidad técnica del liceo enfocada en la gestión de documentos, recursos humanos y apoyo operativo en empresas",
+        "respuesta": "ADMINISTRACION",
+        "pista": "Una especialidad técnica del liceo. En ella aprendes a organizar empresas, redactar contratos y gestionar archivos."
+      },
+      {
+        "tipo": "Empieza por A",
+        "definicion": "Ciencia que estudia los astros, los planetas y el universo",
+        "respuesta": "ASTRONOMIA",
+        "pista": "Ciencia que usa telescopios gigantes para descubrir nuevas galaxias, agujeros negros y constelaciones."
+      },
+      {
+        "tipo": "Empieza por A",
+        "definicion": "Personal encargado de mantener la higiene, el aseo y el orden en las dependencias del liceo",
+        "respuesta": "AUXILIARES",
+        "pista": "El equipo del liceo que limpia las salas, ordena los bancos y nos ayuda a mantener el colegio impecable."
+      },
+      {
+        "tipo": "Empieza por A",
+        "definicion": "Persona adulta responsable de la matrícula y de representar al estudiante ante la institución",
+        "respuesta": "APODERADO",
+        "pista": "Tu mamá, papá o tutor legal que firma tus notas y asiste a las reuniones citadas por el profesor jefe."
+      },
+      {
+        "tipo": "Empieza por A",
+        "definicion": "Insecto volador de color negro y amarillo que produce miel y cera",
+        "respuesta": "ABEJA",
+        "pista": "Tiene 5 letras. Es el insecto polinizador más importante del mundo; si te pica, te deja un aguijón."
+      },
+      {
+        "tipo": "Empieza por A",
+        "definicion": "Acción de abstenerse total o parcialmente de comer o beber por un tiempo determinado",
+        "respuesta": "AYUNO",
+        "pista": "Tiene 5 letras. Lo haces de forma obligatoria antes de ir al consultorio a hacerte exámenes de sangre en la mañana."
+      },
+      {
+        "tipo": "Empieza por A",
+        "definicion": "Arte y técnica de diseñar, proyectar y construir edificios y espacios públicos",
+        "respuesta": "ARQUITECTURA",
+        "pista": "Una carrera universitaria ideal para quienes disfrutan haciendo planos y maquetas."
+      },
+      {
+        "tipo": "Empieza por A",
+        "definicion": "Vaso sanguíneo que lleva la sangre oxigenada desde el corazón hacia las demás partes del cuerpo",
+        "respuesta": "ARTERIA",
+        "pista": "Parte fundamental del sistema circulatorio que estudias en la clase de Biología."
+      }
+    ]
+  },
+  {
+    "letter": "B",
+    "questions": [
+      {
+        "tipo": "Empieza por B",
+        "definicion": "Lugar del establecimiento donde se encuentran libros, se puede estudiar y pedir material de lectura",
+        "respuesta": "BIBLIOTECA",
+        "pista": "Es el lugar más silencioso del liceo. Tiene 5 sílabas y allí se piden prestados los libros para el control de lectura."
+      },
+      {
+        "tipo": "Empieza por B",
+        "definicion": "Documento oficial del Estado que otorga un apoyo económico a los estudiantes para financiar sus estudios",
+        "respuesta": "BECA",
+        "pista": "Tiene solo 4 letras. Te la ganas por buen rendimiento académico o por situación vulnerable para ayudarte a pagar los estudios."
+      },
+      {
+        "tipo": "Empieza por B",
+        "definicion": "Ciencia que estudia la estructura de los seres vivos y sus procesos vitales",
+        "respuesta": "BIOLOGIA",
+        "pista": "Asignatura científica donde se estudian las células, el cuerpo humano, el ADN y los reinos de la naturaleza."
+      },
+      {
+        "tipo": "Empieza por B",
+        "definicion": "Mamífero marino de enorme tamaño, considerado el animal más grande del planeta",
+        "respuesta": "BALLENA",
+        "pista": "No es un pez, es un mamífero gigante del océano. La azul es la más famosa del mundo por su descomunal tamaño."
+      },
+      {
+        "tipo": "Empieza por B",
+        "definicion": "Vehículo de dos ruedas que se impulsa mediante la fuerza ejercida sobre los pedales",
+        "respuesta": "BICICLETA",
+        "pista": "Medio de transporte ecológico. Algunos estudiantes la usan para llegar al liceo y la dejan con candado en el bicicletero."
+      },
+      {
+        "tipo": "Contiene la B o Empieza por B",
+        "definicion": "Masa de pastelería hecha con harina, huevos y azúcar que sirve de base para las tortas",
+        "respuesta": "BIZCOCHO",
+        "pista": "Esponjoso y dulce. Los pasteleros lo cortan en capas para rellenarlo con manjar, crema o mermelada."
+      },
+      {
+        "tipo": "Contiene la B o Empieza por B",
+        "definicion": "Pieza metálica o cerámica que se adhiere a los dientes en los tratamientos de ortodoncia",
+        "respuesta": "BRACKET",
+        "pista": "Palabra proveniente del inglés. Son los 'frenillos' metálicos que te pone el dentista para ordenar y enderezar tu sonrisa."
+      },
+      {
+        "tipo": "Empieza por B",
+        "definicion": "Gran comunidad ecológica con condiciones climáticas, flora y fauna geográficamente similares",
+        "respuesta": "BIOMA",
+        "pista": "Tiene 5 letras. Ejemplos de este concept en geografía y ciencias son la tundra, la selva tropical o el desierto."
+      },
+      {
+        "tipo": "Empieza por B",
+        "definicion": "Microorganismo unicelular sin núcleo definido, que puede causar enfermedades o ser beneficioso",
+        "respuesta": "BACTERIA",
+        "pista": "Las observas con el microscopio en el laboratorio y algunas ayudan a hacer el yogur."
+      },
+      {
+        "tipo": "Empieza por B",
+        "definicion": "Instrumento utilizado en el laboratorio para medir con exactitud la masa de los objetos o sustancias",
+        "respuesta": "BALANZA",
+        "pista": "Se usa en las clases de Ciencias o Química para pesar los reactivos antes de un experimento."
+      }
+    ]
+  },
+  {
+    "letter": "C",
+    "questions": [
+      {
+        "tipo": "Empieza por C",
+        "definicion": "Especialidad técnica del liceo que se enfoca en el control de finanzas, balances y cuentas",
+        "respuesta": "CONTABILIDAD",
+        "pista": "Una de las especialidades del liceo. Ideal para quienes aman las matemáticas, los libros contables y trabajar en empresas."
+      },
+      {
+        "tipo": "Empieza por C",
+        "definicion": "Lugar del establecimiento equipado con mesas y sillas donde los estudiantes almuerzan",
+        "respuesta": "COMEDOR",
+        "pista": "Es la sala grande donde se reparten las bandejas de almuerzo y compartes la mesa con tus compañeros al mediodía."
+      },
+      {
+        "tipo": "Empieza por C",
+        "definicion": "Organización estudiantil elegida democráticamente para representar a los alumnos del liceo",
+        "respuesta": "CENTRO DE ALUMNOS",
+        "pista": "Tres palabras. El grupo de estudiantes líderes que organizan las alianzas, torneos deportivos y defienden los derechos del alumnado."
+      },
+      {
+        "tipo": "Empieza por C",
+        "definicion": "Grupo de alumnos del mismo nivel que comparten una misma sala de clases y plan de estudio",
+        "respuesta": "CURSO",
+        "pista": "Tiene 5 letras. Ejemplos: El Primero Medio A o el Tercero Medio B. El grupo con el que compartes todo el año."
+      },
+      {
+        "tipo": "Empieza por C",
+        "definicion": "Unidad estructural y funcional más pequeña de la que están hechos todos los seres vivos",
+        "respuesta": "CELULA",
+        "pista": "Lleva tilde en la E. Puede ser animal o vegetal, y necesitas un microscopio para ver su núcleo y membrana."
+      },
+      {
+        "tipo": "Empieza por C",
+        "definicion": "Órgano muscular que bombea la sangre a través del sistema circulatorio",
+        "respuesta": "CORAZON",
+        "pista": "Lleva tilde en la 'O'. Late más rápido si corres en educación física o si ves a la persona que te gusta en el pasillo."
+      },
+      {
+        "tipo": "Empieza por C",
+        "definicion": "Parte superior del cuerpo humano que contiene el cerebro, los ojos, la nariz y la boca",
+        "respuesta": "CABEZA",
+        "pista": "Tiene 6 letras. Es donde se procesan los pensamientos y la parte del cuerpo donde te pones el gorro de lana cuando hace frío."
+      },
+      {
+        "tipo": "Empieza por C",
+        "definicion": "Cada una de las grandes extensiones de tierra del planeta separadas entre sí por los océanos",
+        "respuesta": "CONTINENTE",
+        "pista": "Palabra de 4 sílabas. El planeta tiene varios (América, Europa, Asia, África...) y nuestro país está ubicado en el americano."
+      },
+      {
+        "tipo": "Empieza por C",
+        "definicion": "Aparato electrónico o digital utilizado para realizar operaciones matemáticas complejas rápidamente",
+        "respuesta": "CALCULADORA",
+        "pista": "El profesor de Matemáticas a veces te deja usarla en las pruebas más difíciles."
+      },
+      {
+        "tipo": "Empieza por C",
+        "definicion": "Instrumento de dibujo formado por dos brazos articulados, usado para trazar circunferencias",
+        "respuesta": "COMPAS",
+        "pista": "Lo llevas en tu estuche geométrico. Tiene una punta de metal que se clava en el papel."
+      }
+    ]
+  },
+  {
+    "letter": "D",
+    "questions": [
+      {
+        "tipo": "Empieza por D",
+        "definicion": "Máxima autoridad del establecimiento educacional",
+        "respuesta": "DIRECTOR",
+        "pista": "Es la palabra que define el cargo de la jefatura máxima del liceo. Su oficina suele estar cerca de la entrada principal."
+      },
+      {
+        "tipo": "Empieza por D",
+        "definicion": "Acción de hablar o exponer un tema frente a un público o profesor en una evaluación",
+        "respuesta": "DISERTACION",
+        "pista": "Evaluación en la que tienes que pararte adelante, usar papelógrafo o PowerPoint y hablar sin leer frente al curso."
+      },
+      {
+        "tipo": "Empieza por D",
+        "definicion": "Profesional que se dedica a la enseñanza de una asignatura",
+        "respuesta": "DOCENTE",
+        "pista": "Tiene 7 letras. Es el término formal e institucional que se usa para llamar a los profesores y profesoras."
+      },
+      {
+        "tipo": "Empieza por D",
+        "definicion": "Gran extensión de terreno arenoso o pedregoso caracterizado por la escasez de lluvia y vegetación",
+        "respuesta": "DESIERTO",
+        "pista": "El norte de Chile tiene el más seco del mundo, llamado Atacama. Hay cactus, camellos y hace mucho calor de día."
+      },
+      {
+        "tipo": "Contiene la D o Empieza por D",
+        "definicion": "Médico especialista en el diagnóstico y tratamiento de las enfermedades de la piel",
+        "respuesta": "DERMATOLOGO",
+        "pista": "Palabra larga de 5 sílabas. Es el doctor al que acudes si tienes problemas de acné, alergias en los brazos o lunares extraños."
+      },
+      {
+        "tipo": "Contiene la D o Empieza por D",
+        "definicion": "Cuerpos duros engastados en las mandíbulas que sirven para masticar los alimentos",
+        "respuesta": "DIENTES",
+        "pista": "Los lavas tres veces al día con pasta dental para evitar las caries. El odontólogo se encarga de revisarlos."
+      },
+      {
+        "tipo": "Contiene la D o Empieza por D",
+        "definicion": "Evaluación o prueba inicial aplicada al inicio del año escolar para medir conocimientos previos",
+        "respuesta": "DIAGNOSTICO",
+        "pista": "Es la primera prueba del año escolar en marzo. Sirve para que el profesor sepa qué recuerdas del año pasado y no lleva nota."
+      },
+      {
+        "tipo": "Contiene la D o Empieza por D",
+        "definicion": "Jornada especial de celebración organizada anualmente en el liceo dedicada a festejar a sus alumnos",
+        "respuesta": "DIA DEL ALUMNO",
+        "pista": "Tres palabras. Es la fiesta del liceo donde los profesores se disfrazan, hacen shows, se suspenden las clases y hay convivencia."
+      },
+      {
+        "tipo": "Empieza por D",
+        "definicion": "Conjunto de principios y normas que regulan las relaciones humanas en toda sociedad",
+        "respuesta": "DERECHO",
+        "pista": "Es la carrera universitaria que debes estudiar si tu sueño es convertirte en abogado."
+      },
+      {
+        "tipo": "Empieza por D",
+        "definicion": "Pausa que se hace en el trabajo o en los estudios para recuperar energías",
+        "respuesta": "DESCANSO",
+        "pista": "Es un sinónimo de 'recreo'. El momento en que te relajas antes del próximo bloque de clases."
+      }
+    ]
+  },
+  {
+    "letter": "E",
+    "questions": [
+      {
+        "tipo": "Empieza por E",
+        "definicion": "Evaluación escrita u oral que se realiza para comprobar los conocimientos en una materia",
+        "respuesta": "EXAMEN",
+        "pista": "Tiene 6 letras, termina en 'N' y es una prueba muy importante que suele dar nervios al final del semestre."
+      },
+      {
+        "tipo": "Empieza por E",
+        "definicion": "Institución, colegio o lugar físico donde las personas asisten para estudiar y aprender",
+        "respuesta": "ESTABLECIMIENTO EDUCACIONAL",
+        "pista": "Dos palabras muy formales. Es el sinónimo técnico para referirse a la escuela, colegio o a nuestro liceo."
+      },
+      {
+        "tipo": "Empieza por E",
+        "definicion": "Persona que asiste diariamente al establecimiento para recibir su formación y aprender",
+        "respuesta": "ESTUDIANTE",
+        "pista": "Eres tú en este momento. La palabra que define a quien va al liceo a adquirir conocimientos y formarse profesionalmente."
+      },
+      {
+        "tipo": "Empieza por E",
+        "definicion": "Conjunto de todos los huesos del cuerpo que da soporte al organismo y protege los órganos internos",
+        "respuesta": "ESQUELETO",
+        "pista": "Es lo que sostiene tu cuerpo. En la sala de ciencias suele haber uno de plástico para estudiar los nombres de los huesos."
+      },
+      {
+        "tipo": "Empieza por E",
+        "definicion": "Bolsa de tela o plástico donde los estudiantes guardan los lápices, gomas y útiles pequeños",
+        "respuesta": "ESTUCHE",
+        "pista": "Tiene 7 letras. Lo abres al empezar cada bloque de clases para sacar tu lápiz pasta, corrector o destacador."
+      },
+      {
+        "tipo": "Contiene la E o Empieza por E",
+        "definicion": "Superficie de cristal pulido que refleja la luz y las imágenes de los objetos situados delante",
+        "respuesta": "ESPEJO",
+        "pista": "Está en la pared de los baños del liceo. Lo miras para peinarte, acomodarte el cuello de la camisa o ver cómo te queda el uniforme."
+      },
+      {
+        "tipo": "Contiene la E o Empieza por E",
+        "definicion": "Extensión indefinida que contiene toda la materia del universo, las galaxias y planetas",
+        "respuesta": "ESPACIO",
+        "pista": "Tiene 7 letras. Es el lugar oscuro e infinito fuera de la Tierra donde viajan los astronautas y flotan los satélites."
+      },
+      {
+        "tipo": "Contiene la E o Empieza por E",
+        "definicion": "Capacidad que tienen los cuerpos o sistemas para realizar un trabajo o produce transformaciones",
+        "respuesta": "ENERGIA",
+        "pista": "Lleva tilde en la I. La necesitas tú para despertarte y la electricidad la entrega para encender las luces de las salas."
+      },
+      {
+        "tipo": "Empieza por E",
+        "definicion": "Aparato portátil de color rojo diseñado para apagar fuegos o principios de incendio",
+        "respuesta": "EXTINTOR",
+        "pista": "Cuelga en las paredes de los pasillos del liceo como medida obligatoria de seguridad."
+      },
+      {
+        "tipo": "Empieza por E",
+        "definicion": "Obra de consulta, generalmente en varios volúmenes, que recopila conocimientos de muchas ciencias",
+        "respuesta": "ENCICLOPEDIA",
+        "pista": "Es como la 'Wikipedia' pero impresa en libros gruesos que encuentras en la biblioteca."
+      }
+    ]
+  },
+  {
+    "letter": "F",
+    "questions": [
+      {
+        "tipo": "Empieza por F",
+        "definicion": "Proceso por el cual las plantas transforman la luz del sol en energía",
+        "respuesta": "FOTOSINTESIS",
+        "pista": "Palabra larga de la clase de ciencias. Es el 'superpoder' químico que tienen las hojas verdes gracias al sol."
+      },
+      {
+        "tipo": "Empieza por F",
+        "definicion": "Asignatura que invita a reflexionar y pensar críticamente sobre la existencia, la moral y la verdad",
+        "respuesta": "FILOSOFIA",
+        "pista": "Materia de los cursos más grandes. En ella se estudia a Sócrates, Platón y se debate el porqué de las cosas."
+      },
+      {
+        "tipo": "Empieza por F",
+        "definicion": "Acción de no asistir a clases o incumplir una norma del reglamento",
+        "respuesta": "FALTA",
+        "pista": "Tiene 5 letras. Puede ser de asistencia (quedarse en casa) o conductual (hacer algo que rompe las reglas del liceo)."
+      },
+      {
+        "tipo": "Empieza por F",
+        "definicion": "Restos o huellas petrificadas de organismos que vivieron en épocas geológicas pasadas",
+        "respuesta": "FOSILES",
+        "pista": "Huesos de dinosaurio o conchas antiguas atrapadas en rocas que los arqueólogos descubren bajo tierra."
+      },
+      {
+        "tipo": "Empieza por F",
+        "definicion": "Fruta pequeña, roja y dulce que tiene sus semillas dispuestas en la superficie externa",
+        "respuesta": "FRUTILLA",
+        "pista": "Fruta deliciosa que en otros países llaman fresa. Queda excelente en jugos, batidos o con crema."
+      },
+      {
+        "tipo": "Contiene la F o Empieza por F",
+        "definicion": "Nombre y apellido escritos de puño y letra puestos en un documento para darle validez",
+        "respuesta": "FIRMA",
+        "pista": "Tiene 5 letras. Los apoderados deben poner la suya en la agenda escolar cuando el profesor les envía una comunicación."
+      },
+      {
+        "tipo": "Contiene la F o Empieza por F",
+        "definicion": "Fenómeno o sensación térmica provocada por la baja temperatura del ambiente",
+        "respuesta": "FRIO",
+        "pista": "Palabra de 4 letras con tilde en la I. Lo sientes en las mañanas de invierno camino al liceo si olvidas usar bufanda."
+      },
+      {
+        "tipo": "Contiene la F o Empieza por F",
+        "definicion": "Asignatura científica que estudia las propiedades de la materia, la energía, el tiempo y el espacio",
+        "respuesta": "FISICA",
+        "pista": "Lleva tilde en la primera I. Asignatura donde resuelves problemas de velocidad, aceleración, gravedad y cinemática."
+      },
+      {
+        "tipo": "Empieza por F",
+        "definicion": "Establecimiento donde se preparan y venden medicamentos con o sin receta médica",
+        "respuesta": "FARMACIA",
+        "pista": "Lugar al que van tus papás a comprar jarabe o pastillas cuando te enfermas."
+      },
+      {
+        "tipo": "Empieza por F",
+        "definicion": "Instrumento musical de viento en forma de tubo con varios agujeros",
+        "respuesta": "FLAUTA",
+        "pista": "Instrumento dulce que es un clásico aprender a tocar en la clase de Educación Musical."
+      }
+    ]
+  },
+  {
+    "letter": "G",
+    "questions": [
+      {
+        "tipo": "Empieza por G",
+        "definicion": "Lugar del liceo donde se realizan actividades físicas y deportes",
+        "respuesta": "GIMNASIO",
+        "pista": "El lugar del liceo donde más se corre, se juega baby fútbol y se salta. ¡No olvides llevar tus zapatillas!"
+      },
+      {
+        "tipo": "Empieza por G",
+        "definicion": "Animal doméstico felino conocido por maullar y cazar ratones",
+        "respuesta": "GATO",
+        "pista": "Tiene 4 letras. Mascota que ronronea, duerme muchas horas al día y es el enemigo natural de los ratones."
+      },
+      {
+        "tipo": "Empieza por G",
+        "definicion": "Utensilio que sirve para borrar las marcas de lápiz en el cuaderno u hojas",
+        "respuesta": "GOMA",
+        "pista": "Tiene 4 letras. Es de miga o de caucho, y la necesitas de inmediato si te equivocas haciendo un ejercicio de matemáticas."
+      },
+      {
+        "tipo": "Empieza por G",
+        "definicion": "Fuerza invisible que atrae a los cuerpos hacia el centro de la Tierra y hace que las cosas caigan",
+        "respuesta": "GRAVEDAD",
+        "pista": "La descubrió Newton cuando le cayó una manzana en la cabeza. Es la razón por la que flotamos en el espacio pero no en el patio."
+      },
+      {
+        "tipo": "Empieza por G",
+        "definicion": "Pequeñas porciones esféricas de líquido que caen de las nubes durante la lluvia",
+        "respuesta": "GOTAS",
+        "pista": "Tiene 5 letras. Si son muy grandes e intensas, significa que se avecina un buen temporal de lluvia."
+      },
+      {
+        "tipo": "Contiene la G o Empieza por G",
+        "definicion": "Parte de las matemáticas que estudia las propiedades de las figuras en el plano o en el espacio",
+        "respuesta": "GEOMETRIA",
+        "pista": "La parte de matemáticas donde usas regla, compás y transportador para medir áreas, perímetros y ángulos."
+      },
+      {
+        "tipo": "Contiene la G o Empieza por G",
+        "definicion": "Prenda de vestir de lana, cuero o tela que cubre y abriga las manos",
+        "respuesta": "GUANTES",
+        "pista": "Vienen en pares. Tienen un espacio separado para cada uno de tus cinco dedos y evitan que se te congelen las manos."
+      },
+      {
+        "tipo": "Contiene la G o Empieza por G",
+        "definicion": "Grupo de seres o cosas que comparten características comunes, o identidad de una persona",
+        "respuesta": "GENERO",
+        "pista": "Lleva tilde en la primera E. Término gramatical y social que clasifica conceptos en femenino, masculino o neutro."
+      },
+      {
+        "tipo": "Empieza por G",
+        "definicion": "Ciencia que estudia y describe la superficie de la Tierra, sus climas, relieves y países",
+        "respuesta": "GEOGRAFIA",
+        "pista": "Asignatura donde usas el atlas, aprendes las capitales del mundo y miras mapas."
+      },
+      {
+        "tipo": "Empieza por G",
+        "definicion": "Actividad física destinada al fortalecimiento, mantenimiento y flexibilidad del cuerpo",
+        "respuesta": "GIMNASIA",
+        "pista": "Deporte que puedes practicar haciendo volteretas o rutinas en Educación Física."
+      }
+    ]
+  },
+  {
+    "letter": "H",
+    "questions": [
+      {
+        "tipo": "Empieza por H",
+        "definicion": "Momento del día o periodo de descanso entre las clases del establecimiento",
+        "respuesta": "HORA DE RECREO",
+        "pista": "Son tres palabras. Es el momento favorito de todos para ir al patio, comer la colación y conversar con amigos."
+      },
+      {
+        "tipo": "Empieza por H",
+        "definicion": "Periodo de tiempo que equivale exactamente a sesenta minutos",
+        "respuesta": "HORA",
+        "pista": "Tiene 4 letras y empieza con una letra muda. La mides mirando las manillas o la pantalla de tu reloj."
+      },
+      {
+        "tipo": "Empieza por H",
+        "definicion": "Tabla o esquema que ordena las asignaturas, los días de la semana y los bloques de clases",
+        "respuesta": "HORARIO",
+        "pista": "Empieza con H. El papel que pegas en la tapa del cuaderno para saber qué materias te tocan el lunes, el martes, etc."
+      },
+      {
+        "tipo": "Empieza por H",
+        "definicion": "Insecto pequeño y muy trabajador que vive en colonias organizadas bajo la tierra",
+        "respuesta": "HORMIGA",
+        "pista": "Empieza con H. Si dejas migas de pan en el suelo de la sala, aparecerán muchas de ellas caminando en una fila perfecta."
+      },
+      {
+        "tipo": "Empieza por H",
+        "definicion": "Polvo fino que se obtiene de la molienda del trigo u otros cereales",
+        "respuesta": "HARINA",
+        "pista": "Empieza con H. Es el ingrediente principal que se usa en la panadería para amasar las marraquetas o las sopaipillas."
+      },
+      {
+        "tipo": "Contiene la H o Empieza por H",
+        "definicion": "Órgano de las plantas, generalmente verde y plano, que brota del tallo o las ramas",
+        "respuesta": "HOJA",
+        "pista": "Empieza con H muda y tiene 4 letras. En otoño cambian a color café y se caen cubriendo el patio del liceo."
+      },
+      {
+        "tipo": "Contiene la H o Empieza por H",
+        "definicion": "Órgano vital de gran tamaño encargado de filtrar las toxinas de la sangre y producir bilis",
+        "respuesta": "HIGADO",
+        "pista": "Empieza con H y lleva tilde en la I. Es el órgano interno del cuerpo humano encargado de procesar todo lo que consumimos."
+      },
+      {
+        "tipo": "Contiene la H o Empieza por H",
+        "definicion": "Organismo perteneciente al reino Fungi que carece de clorofila, como los champiñones o el moho",
+        "respuesta": "HONGO",
+        "pista": "Empieza con H. No son plantas ni animales, pertenecen a su propio reino biológico y crecen en lugares húmedos."
+      },
+      {
+        "tipo": "Empieza por H",
+        "definicion": "Establecimiento equipado para la atención, tratamiento y recuperación de enfermos o heridos",
+        "respuesta": "HOSPITAL",
+        "pista": "Lugar al que llega la ambulancia por la sección de urgencias cuando alguien tiene un accidente grave."
+      },
+      {
+        "tipo": "Empieza por H",
+        "definicion": "Disciplina que narra y estudia los sucesos importantes del pasado de la humanidad",
+        "respuesta": "HISTORIA",
+        "pista": "Asignatura donde aprendes sobre la época colonial, las guerras mundiales y los próceres de Chile."
+      }
+    ]
+  },
+  {
+    "letter": "I",
+    "questions": [
+      {
+        "tipo": "Empieza por I",
+        "definicion": "Lugar del establecimiento encargado de velar por la disciplina, la seguridad y el cumplimiento del reglamento interno",
+        "respuesta": "INSPECTORIA GENERAL",
+        "pista": "Dos palabras. Es el lugar a donde vas si llegas tarde en la mañana o si necesitas un pase para entrar a la sala."
+      },
+      {
+        "tipo": "Empieza por I",
+        "definicion": "Asignatura enfocada en aprender el idioma anglosajón para comunicarse globalmente",
+        "respuesta": "INGLES",
+        "pista": "La asignatura donde aprendes a decir 'Hello', 'Goodbye' y traduces canciones que escuchas en TikTok."
+      },
+      {
+        "tipo": "Empieza por I",
+        "definicion": "Persona que trabaja en el establecimiento vigilando el orden y la disciplina",
+        "respuesta": "INSPECTOR",
+        "pista": "Lleva un libro de asistencia en la mano, recorre los pasillos en los recreos y te pide la agenda si andas fuera de la sala."
+      },
+      {
+        "tipo": "Empieza por I",
+        "definicion": "Objeto metálico o mineral que tiene la propiedad de atraer el hierro y otros metales",
+        "respuesta": "IMAN",
+        "pista": "Tiene solo 4 letras. Tiene un polo norte y un polo sur magnético, y sirve para colgar notas en las pizarras metálicas."
+      },
+      {
+        "tipo": "Empieza por I",
+        "definicion": "Periférico conectado a una computadora que permite plasmar textos o imágenes en papel",
+        "respuesta": "IMPRESORA",
+        "pista": "La máquina que usas cuando el profesor te pide entregar un trabajo de investigación impreso en una carpeta."
+      },
+      {
+        "tipo": "Contiene la I o Empieza por I",
+        "definicion": "Porción de tierra rodeada de agua por todas partes",
+        "respuesta": "ISLA",
+        "pista": "Tiene solo 4 letras. Ejemplos chilenos de ellas son Chiloé, la Isla de Pascua (Rapa Nui) o el archipiélago Juan Fernández."
+      },
+      {
+        "tipo": "Contiene la I o Empieza por I",
+        "definicion": "Falta o incumplimiento de una norma, ley o reglamento escolar",
+        "respuesta": "INFRACCION",
+        "pista": "Es el término formal para referirse a una falta al Manual de Convivencia, como usar el celular durante una prueba."
+      },
+      {
+        "tipo": "Contiene la I o Empieza por I",
+        "definicion": "Falta de asistencia de un estudiante al establecimiento durante la jornada escolar regular",
+        "respuesta": "INASISTENCIA",
+        "pista": "Palabra larga de 12 letras. Si acumulas mucha cantidad de ella durante el año, corres peligro de repetir por porcentaje."
+      },
+      {
+        "tipo": "Empieza por I",
+        "definicion": "Red informática mundial descentralizada que permite la conexión de computadoras",
+        "respuesta": "INTERNET",
+        "pista": "La conexión que necesitas para entrar a tus redes sociales, buscar tareas y ver videos."
+      },
+      {
+        "tipo": "Empieza por I",
+        "definicion": "Estación del año que astronómicamente comienza con el solsticio de junio en el hemisferio sur",
+        "respuesta": "INVIERNO",
+        "pista": "La estación más fría del año, en la cual ocurren las lluvias más fuertes y tienes vacaciones a mitad de año."
+      }
+    ]
+  },
+  {
+    "letter": "J",
+    "questions": [
+      {
+        "tipo": "Empieza por J",
+        "definicion": "Nombre del director de nuestro establecimiento educacional",
+        "respuesta": "JORGE ENRIQUEZ CONCHA",
+        "pista": "Son tres palabras. El nombre completo de la máxima autoridad de nuestro propio liceo."
+      },
+      {
+        "tipo": "Empieza por J",
+        "definicion": "Planeta más grande del sistema solar, famoso por sus bandas de nubes y tormentas",
+        "respuesta": "JUPITER",
+        "pista": "Lleva tilde en la 'U'. Es el gigante gaseoso de nuestro sistema planetario y tiene una gran mancha roja."
+      },
+      {
+        "tipo": "Empieza por J",
+        "definicion": "Objeto o piedra preciosa usada en joyería",
+        "respuesta": "JOYA",
+        "pista": "Tiene 4 letras. Un anillo de oro, un collar de diamantes o unos aros de plata entran en esta categoría."
+      },
+      {
+        "tipo": "Empieza por J",
+        "definicion": "Persona que tiene autoridad pública para juzgar, administrar justicia y dictar sentencias",
+        "respuesta": "JUEZ",
+        "pista": "Palabra corta de 4 letras que termina en Z. Usa un martillo de madera en la corte y decide si alguien es culpable o inocente."
+      },
+      {
+        "tipo": "Empieza por J",
+        "definicion": "Persona de edad avanzada que ha cesado su actividad laboral y recibe una pensión",
+        "respuesta": "JUBILADO",
+        "pista": "Termina en 'O'. Condición de los abuelitos que trabajaron muchos años y ahora descansan recibiendo su jubilación."
+      },
+      {
+        "tipo": "Contiene la J o Empieza por J",
+        "definicion": "Sustancia soluble en agua que se utiliza para lavar y limpiar el cuerpo",
+        "respuesta": "JABON",
+        "pista": "Lleva tilde en la O. Es indispensable usarlo en el baño para desinfectarse las manos antes de ir al comedor a almorzar."
+      },
+      {
+        "tipo": "Contiene la J o Empieza por J",
+        "definicion": "Mamífero rumiante africano que se caracteriza por tener el cuello y las patas extremadamente largos",
+        "respuesta": "JIRAFA",
+        "pista": "Tiene 6 letras y empieza con J. Es el animal terrestre más alto del planeta y alcanza las hojas más altas de los árboles."
+      },
+      {
+        "tipo": "Contiene la J o Empieza por J",
+        "definicion": "Terreno de bosque tropical denso con abundante vegetación silvestre y clima cálido y húmedo",
+        "respuesta": "JUNGLA",
+        "pista": "Tiene 6 letras. Es el sinónimo de selva tropical, llena de enredaderas, árboles gigantes, jaguares y monos."
+      },
+      {
+        "tipo": "Empieza por J",
+        "definicion": "Espacio de tierra donde se cultivan especies vegetales, principalmente con fines ornamentales",
+        "respuesta": "JARDIN",
+        "pista": "Zona verde del colegio cuidada por los auxiliares, llena de pasto, flores o árboles."
+      },
+      {
+        "tipo": "Empieza por J",
+        "definicion": "Recipiente con un pico y asa grande que sirve para contener y servir líquidos",
+        "respuesta": "JARRA",
+        "pista": "El recipiente grande donde sirven el agua o el jugo para compartir en las mesas del comedor."
+      }
+    ]
+  },
+  {
+    "letter": "K",
+    "questions": [
+      {
+        "tipo": "Empieza por K",
+        "definicion": "Unidad de medida que se utiliza para pesar la masa",
+        "respuesta": "KILO",
+        "pista": "Tiene solo 4 letras. Es la unidad en la que compramos el pan, las papas o medimos nuestro propio peso."
+      },
+      {
+        "tipo": "Empieza por K",
+        "definicion": "Unidad de medida de longitud que equivale a mil metros",
+        "respuesta": "KILOMETRO",
+        "pista": "Empieza por K. Es la unidad que usamos en la carretera para saber cuánta distancia nos falta para llegar a otra ciudad."
+      },
+      {
+        "tipo": "Empieza por K",
+        "definicion": "Fruta de cáscara café con vellosidades y pulpa verde con pequeñas semillas negras",
+        "respuesta": "KIWI",
+        "pista": "Empieza por K y tiene solo 4 letras. Es una fruta ovalada, ácida y muy rica en vitamina C."
+      },
+      {
+        "tipo": "Empieza por K",
+        "definicion": "Mamífero marsupial de Australia que vive en los árboles y se alimenta de hojas de eucalipto",
+        "respuesta": "KOALA",
+        "pista": "Empieza por K. Parece un osito de peluche gris, es nativo de Australia y pasa casi todo el día durmiendo abrazado a un tronco."
+      },
+      {
+        "tipo": "Empieza por K",
+        "definicion": "Salsa sazonada a base de tomate, vinagre, azúcar y especias",
+        "respuesta": "KETCHUP",
+        "pista": "Empieza por K. Es la salsa roja e indispensable que le pones a las papas fritas o a los completos en el carrito."
+      },
+      {
+        "tipo": "Contiene la K o Empieza por K",
+        "definicion": "Sistema de combate y arte marcial tradicional de origen japonés sin armas",
+        "respuesta": "KARATE",
+        "pista": "Empieza por K. Arte marcial donde se usan cinturones de colores (blanco, verde, negro) según tu nivel de habilidad y experiencia."
+      },
+      {
+        "tipo": "Contiene la K o Empieza por K",
+        "definicion": "Género de música popular originario de Corea del Sur que incluye coreografías complejas",
+        "respuesta": "K-POP",
+        "pista": "Empieza por K. Estilo musical coreano cuyos grupos musicales (como BTS) llenan estadios y hacen bailes perfectos."
+      },
+      {
+        "tipo": "Contiene la K o Empieza por K",
+        "definicion": "Embarcación ligera de remo, estrecha y alargada, usada en actividades deportivas",
+        "respuesta": "KAYAK",
+        "pista": "Palabra capicúa de 5 letras que empieza y termina con K. Te subes con un chaleco salvavidas y usas un remo doble."
+      },
+      {
+        "tipo": "Empieza por K",
+        "definicion": "Prenda de vestir tradicional japonesa de mangas muy anchas y atada a la cintura",
+        "respuesta": "KIMONO",
+        "pista": "Bata larga que se usa en Japón o en competiciones de artes marciales tradicionales."
+      },
+      {
+        "tipo": "Empieza por K",
+        "definicion": "En algunas religiones orientales, energía invisible derivada de los actos de las personas",
+        "respuesta": "KARMA",
+        "pista": "Concepto espiritual que dice que si haces algo bueno (o malo), el universo te lo devolverá."
+      }
+    ]
+  },
+  {
+    "letter": "L",
+    "questions": [
+      {
+        "tipo": "Empieza por L",
+        "definicion": "Satélite natural de la Tierra que brilla en la noche por la luz del Sol",
+        "respuesta": "LUNA",
+        "pista": "Tiene 4 letras. Cambia de forma cada mes (llena, menguante, nueva) y controla las mareas de la Tierra."
+      },
+      {
+        "tipo": "Asignatura",
+        "definicion": "Asignatura que estudia el idioma español, la buena redacción, la ortografía y la lectura",
+        "respuesta": "LENGUAJE",
+        "pista": "La asignatura donde lees novelas, analizas poemas y aprendes las reglas de acentuación."
+      },
+      {
+        "tipo": "Espacio equipado",
+        "definicion": "Espacio equipado con instrumentos especiales para realizar actividades experimentales y científicas",
+        "respuesta": "LABORATORIO",
+        "pista": "Hay uno de ciencias (con microscopios) y varios de computación para las especialidades técnicas."
+      },
+      {
+        "tipo": "Empieza por L",
+        "definicion": "Órgano del cuerpo humano donde se encuentran las cuerdas vocales, permitiendo el habla",
+        "respuesta": "LARINGE",
+        "pista": "Termina en 'E'. Es la parte de la garganta que se inflama si gritas mucho en el recreo y te quedas disfónico."
+      },
+      {
+        "tipo": "Líquido blanco",
+        "definicion": "Líquido blanco y nutritivo producido por las hembras de los mamíferos, especialmente las vacas",
+        "respuesta": "LECHE",
+        "pista": "Tiene 5 letras. Es la base para hacer el queso, el yogur y la vierten en la taza antes del café o el Milo."
+      },
+      {
+        "tipo": "Contiene la L o Empieza por L",
+        "definicion": "Conjunto de hojas de papel impresas y encuadernadas que forman un volumen",
+        "respuesta": "LIBRO",
+        "pista": "Tiene 5 letras. Si lees uno completo al mes para la asignatura de Lenguaje, mejoras tu ortografía y comprensión."
+      },
+      {
+        "tipo": "Contiene la L o Empieza por L",
+        "definicion": "Fruto cítrico redondo y de color amarillo o verde, conocido por su sabor extremadamente ácido",
+        "respuesta": "LIMON",
+        "pista": "Lleva tilde en la O. Le pones unas gotas a las ensaladas o preparas una bebida refrescante con agua y azúcar en verano."
+      },
+      {
+        "tipo": "Contiene la L o Empieza por L",
+        "definicion": "Depósito natural de agua dulce o salada, de menores dimensiones que un lago",
+        "respuesta": "LAGUNA",
+        "pista": "Tiene 6 letras. Una acumulación de agua rodeada de naturaleza, más pequeña y menos profunda que un lago grande."
+      },
+      {
+        "tipo": "Empieza por L",
+        "definicion": "Utensilio para escribir o dibujar formado por un cilindro de madera con una barra de grafito en el centro",
+        "respuesta": "LAPIZ",
+        "pista": "El útil escolar más básico. Muchos tienen una gomita en la parte superior."
+      },
+      {
+        "tipo": "Empieza por L",
+        "definicion": "Aparato portátil manual que proyecta luz, generalmente alimentado por pilas",
+        "respuesta": "LINTERNA",
+        "pista": "La enciendes para alumbrar cuando vas de campamento o si se corta la electricidad de noche."
+      }
+    ]
+  },
+  {
+    "letter": "M",
+    "questions": [
+      {
+        "tipo": "Asignatura",
+        "definicion": "Asignatura que se encarga del estudio de los números, las formas geométricas y los cálculos",
+        "respuesta": "MATEMATICAS",
+        "pista": "La asignatura de los números, las ecuaciones, las fracciones y el Teorema de Pitágoras."
+      },
+      {
+        "tipo": "Empieza por M",
+        "definicion": "Parte del cuerpo humano que está al final del brazo y usamos para escribir o tomar objetos",
+        "respuesta": "MANO",
+        "pista": "Tiene 5 dedos y es la parte del cuerpo con la que firmas, saludas y sostienes el lápiz para tomar apuntes."
+      },
+      {
+        "tipo": "Empieza por M",
+        "definicion": "Bolso con tirantes para los hombros que se usa para cargar los útiles escolares",
+        "respuesta": "MOCHILA",
+        "pista": "Te la pones en la espalda todas las mañanas. Adentro van tus cuadernos, el estuche y la colación."
+      },
+      {
+        "tipo": "Empieza por M",
+        "definicion": "Cuarto planeta del Sistema Solar, conocido popularmente como el Planeta Rojo",
+        "respuesta": "MARTE",
+        "pista": "Tiene 5 letras. Los científicos envían robots exploradores (rovers) allí para investigar si alguna vez hubo agua."
+      },
+      {
+        "tipo": "Empieza por M",
+        "definicion": "Mueble compuesto por una tabla horizontal sostenida por patas, usada para escribir o comer",
+        "respuesta": "MESA",
+        "pista": "Tiene 4 letras. En la sala compartes una con un compañero de banco para apoyar los cuadernos."
+      },
+      {
+        "tipo": "Contiene la M o Empieza por M",
+        "definicion": "Pan tradicional chileno de masa batida que se presenta dividido en cuatro partes",
+        "respuesta": "MARRAQUETA",
+        "pista": "El pan más clásico de Chile. Crujiente, ideal para comerlo calientito con mantequilla, palta o queso en el desayuno."
+      },
+      {
+        "tipo": "Contiene la M o Empieza por M",
+        "definicion": "Movimiento periódico de ascenso y descenso de las aguas del mar por atracción de la Luna",
+        "respuesta": "MAREA",
+        "pista": "Tiene 5 letras. Si vas a la playa en la noche notarás que está 'alta' y cubre más arena debido a la fuerza lunar."
+      },
+      {
+        "tipo": "Contiene la M o Empieza por M",
+        "definicion": "Asignatura escolar enfocada en el estudio de los sonidos, el ritmo, el canto y los instrumentos",
+        "respuesta": "MUSICA",
+        "pista": "Lleva tilde en la U. La clase favorita para tocar la flauta, la guitarra, el metalófono o cantar en el coro del liceo."
+      },
+      {
+        "tipo": "Empieza por M",
+        "definicion": "Instrumento óptico que amplía la imagen de objetos tan pequeños que no se pueden ver a simple vista",
+        "respuesta": "MICROSCOPIO",
+        "pista": "Es el aparato estrella del laboratorio de ciencias para poder observar bacterias y células."
+      },
+      {
+        "tipo": "Empieza por M",
+        "definicion": "Cuerpo de agua enorme y salado, de tamaño menor a un océano",
+        "respuesta": "MAR",
+        "pista": "Tiene tres letras. Famoso en Chile por tener mucha costa, playas, arena y dar origen a los tsunamis."
+      }
+    ]
+  },
+  {
+    "letter": "N",
+    "questions": [
+      {
+        "tipo": "Empieza por N",
+        "definicion": "Reglas oficiales del establecimiento que todos los estudiantes deben seguir y respetar",
+        "respuesta": "NORMAS DE CONVIVENCIA",
+        "pista": "Tres palabras. Son los acuerdos que firmamos todos para respetarnos, evitar conflictos y mantener un ambiente pacífico."
+      },
+      {
+        "tipo": "Empieza por N",
+        "definicion": "Sustancia o elemento que contienen los alimentos y que el cuerpo necesita para tener energía",
+        "respuesta": "NUTRIENTE",
+        "pista": "Las vitaminas, proteínas y minerales lo son. Lo encuentras en mayor cantidad en la comida saludable."
+      },
+      {
+        "tipo": "Empieza por N",
+        "definicion": "Reglas obligatorias que todos en el establecimiento deben respetar para una buena convivencia",
+        "respuesta": "NORMAS",
+        "pista": "Tiene 6 letras. Son las pautas básicas como 'no botar basura', 'respetar la fila' o 'levantar la mano para hablar'."
+      },
+      {
+        "tipo": "Empieza por N",
+        "definicion": "Célula del sistema nervioso encargada de transmitir los impulsos eléctricos por el cuerpo",
+        "respuesta": "NEURONA",
+        "pista": "Están por millones en tu cerebro y se conectan entre sí cada vez que estudias, memorizas o piensas una respuesta."
+      },
+      {
+        "tipo": "Empieza por N",
+        "definicion": "Calificación numérica o conceptual obtenida en una evaluación o trabajo escolar",
+        "respuesta": "NOTA",
+        "pista": "Tiene 4 letras. En Chile van del 1.0 al 7.0, y necesitas mínimo un 4.0 para azul."
+      },
+      {
+        "tipo": "Contiene la N o Empieza por N",
+        "definicion": "Masa de vapor de agua suspendida en la atmósfera que puede producir lluvia",
+        "respuesta": "NUBE",
+        "pista": "Tiene 4 letras. Flotan en el cielo y si se ponen de color gris oscuro, es una señal segura de que debes sacar el paraguas."
+      },
+      {
+        "tipo": "Contiene la N o Empieza por N",
+        "definicion": "Persona born in un territorio determinado, o relativo a los pueblos originarios de un lugar",
+        "respuesta": "NATIVO",
+        "pista": "Tiene 6 letras. Se refiere a las plantas, animales o comunidades humanas que son originarias propias de un lugar."
+      },
+      {
+        "tipo": "Contiene la N o Empieza por N",
+        "definicion": "Conjunto de todas las cosas y seres vivos que existen en el universo sin intervención humana",
+        "respuesta": "NATURALEZA",
+        "pista": "Involucra los bosques, los ríos, las montañas y los animales salvajes. Debemos cuidarla evitando la contaminación."
+      },
+      {
+        "tipo": "Empieza por N",
+        "definicion": "Parte saliente del rostro humano que se encuentra entre los ojos y la boca, clave en el sistema respiratorio",
+        "respuesta": "NARIZ",
+        "pista": "Órgano que alberga el sentido del olfato y por donde respiras el aire o estornudas."
+      },
+      {
+        "tipo": "Empieza por N",
+        "definicion": "Obra literaria en prosa en la que se narra una acción fingida en todo o en parte",
+        "respuesta": "NOVELA",
+        "pista": "Un libro extenso de ficción. Suele ser el tipo de lectura domiciliaria mensual que te evalúan en Lenguaje."
+      }
+    ]
+  },
+  {
+    "letter": "O",
+    "questions": [
+      {
+        "tipo": "Contiene la O",
+        "definicion": "Elemento tecnológico indispensable en las salas de computación para trabajar",
+        "respuesta": "COMPUTADOR",
+        "pista": "Contiene la letra O tres veces. Es la máquina con pantalla, teclado y mouse que usamos en los laboratorios tecnológicos."
+      },
+      {
+        "tipo": "Empieza por O",
+        "definicion": "Órgano de la vista que nos permite percibir las formas y los colores",
+        "respuesta": "OJO",
+        "pista": "Palabra capicúa de 3 letras (se lee igual al derecho y al revés). Es el órgano con el que estás leyendo este texto."
+      },
+      {
+        "tipo": "Persona encargado",
+        "definicion": "Persona encargado de guiar a los alumnos en sus decisiones personales, de estudios o vocacionales",
+        "respuesta": "ORIENTADOR",
+        "pista": "El profesional del liceo al que vas a pedirle consejos sobre qué estudiar en el futuro o si tienes un problema personal."
+      },
+      {
+        "tipo": "Empieza por O",
+        "definicion": "Gran masa de agua salada que cubre la mayor parte de la superficie terrestre",
+        "respuesta": "OCEANO",
+        "pista": "Chile limita con el más grande de todos, el Pacífico. Sus aguas albergan ballenas, tiburones y peces."
+      },
+      {
+        "tipo": "Sentido corporal",
+        "definicion": "Sentido corporal que permite percibir y distinguir los olores a través de las fosas nasales",
+        "respuesta": "OLFATO",
+        "pista": "El sentido que te avisa de inmediato si el almuerzo del casino huele rico o si alguien abrió un elemento químico fuerte."
+      },
+      {
+        "tipo": "Contiene la O o Empieza por O",
+        "definicion": "Órgano y sentido corporal que permite percibir los sonidos del entorno",
+        "respuesta": "OIDO",
+        "pista": "Tiene 4 letras. Es el órgano que te permite escuchar la campana del liceo, la explicación del profe o tu música favorita."
+      },
+      {
+        "tipo": "Contiene la O o Empieza por O",
+        "definicion": "Elemento químico metálico, noble y de color amarillo brillante, muy valorado en joyería",
+        "respuesta": "ORO",
+        "pista": "Palabra cortísima de 3 letras. Los campeones olímpicos reciben una medalla hecha de este material brillante y caro."
+      },
+      {
+        "tipo": "Contiene la O o Empieza por O",
+        "definicion": "Paraje aislado en medio del desierto donde se encuentra agua y zonas con vegetación",
+        "respuesta": "OASIS",
+        "pista": "Tiene 5 letras. Es el único lugar con palmeras y agua cristalina que rompe la arena seca del desierto."
+      },
+      {
+        "tipo": "Empieza por O",
+        "definicion": "Lugar especialmente equipado e instalado para la observación de los fenómenos astronómicos",
+        "respuesta": "OBSERVATORIO",
+        "pista": "Centro científico gigante. En el norte de Chile hay muchos de estos por tener cielos despejados para ver estrellas."
+      },
+      {
+        "tipo": "Empieza por O",
+        "definicion": "Institución de acogida que se encarga de cuidar a menores de edad que no tienen padres",
+        "respuesta": "ORFANATO",
+        "pista": "Lugar o residencia de menores de adopción, muy común en los cuentos clásicos e historias de ficción."
+      }
+    ]
+  },
+  {
+    "letter": "P",
+    "questions": [
+      {
+        "tipo": "Empieza por P",
+        "definicion": "Especialidad técnica del liceo enfocada en la educación, cuidado y desarrollo de los niños pequeños",
+        "respuesta": "PARVULO",
+        "pista": "Especialidad del liceo. Ideal para quienes quieren trabajar en jardines infantiles enseñando a niños pequeños."
+      },
+      {
+        "tipo": "Empieza por P",
+        "definicion": "Lugar del establecimiento donde los estudiantes se reúnen a conversar o pasear durante el recreo",
+        "respuesta": "PATIO",
+        "pista": "Tiene 5 letras. Es la zona abierta del liceo donde tomas aire, juegas y caminas cuando suena el timbre de descanso."
+      },
+      {
+        "tipo": "Empieza por P",
+        "definicion": "Hoja delgada hecha con pasta de fibras vegetales que sirve para escribir, dibujar o imprimir",
+        "respuesta": "PAPEL",
+        "pista": "Tiene 5 letras. Si se junta mucho en cuadernillos forma los cuadernos y libros que usas a diario."
+      },
+      {
+        "tipo": "En informática",
+        "definicion": "En informática, la acción de escribir líneas de código usando lenguajes informáticos para crear software o páginas web",
+        "respuesta": "PROGRAMACION",
+        "pista": "Área tecnológica clave. Implica escribir código (como Python o JavaScript) para que funcionen los videojuegos y las apps."
+      },
+      {
+        "tipo": "Superficie lisa",
+        "definicion": "Superficie lisa colgada en la pared del aula donde el docente escribe o dibuja con tiza o plumón",
+        "respuesta": "PIZARRA",
+        "pista": "Es grande, verde o blanca, y está al frente de la sala. Todos miran hacia allá cuando el profesor explica la materia."
+      },
+      {
+        "tipo": "Contiene la P o Empieza por P",
+        "definicion": "Interrupción de las actividades académicas o laborales como medida de protesta o movilización",
+        "respuesta": "PARO",
+        "pista": "Tiene 4 letras. Ocurre cuando los profesores o los estudiantes deciden suspender las clases temporalmente por demandas sociales."
+      },
+      {
+        "tipo": "Contiene la P o Empieza por P",
+        "definicion": "Organismo que vive a costa de otra especie diferente, alimentándose de ella y causándole daño",
+        "respuesta": "PARASITO",
+        "pista": "Lleva tilde en la 'A'. Ejemplos cotidianos de ellos son las garrapatas, las pulgas o las lombrices intestinales."
+      },
+      {
+        "tipo": "Contiene la P o Empieza por P",
+        "definicion": "Documento o plan de estudios formal que detalla los contenidos a cursar en el año lectivo",
+        "respuesta": "PROGRAMA",
+        "pista": "Tiene 8 letras. Es el documento donde los profesores ven qué unidades y contenidos deben enseñar en cada mes."
+      },
+      {
+        "tipo": "Empieza por P",
+        "definicion": "Persona que ejerce o enseña una ciencia o arte en un recinto educativo",
+        "respuesta": "PROFESOR",
+        "pista": "Sinónimo más común de docente. Es quien está a cargo de la clase, explica la materia y pone las notas."
+      },
+      {
+        "tipo": "Empieza por P",
+        "definicion": "Órgano de la respiración de los seres humanos y otros vertebrados terrestres",
+        "respuesta": "PULMON",
+        "pista": "Lleva tilde en la O. Tienes dos en tu pecho, se inflan de oxígeno al inhalar y se contraen al exhalar."
+      }
+    ]
+  },
+  {
+    "letter": "Q",
+    "questions": [
+      {
+        "tipo": "Empieza por Q",
+        "definicion": "Asignatura de ciencias que estudia los elementos, la estructura de la materia y sus reacciones",
+        "respuesta": "QUIMICA",
+        "pista": "La asignatura donde se usa la tabla periódica de los elementos y se hacen experimentos con tubos de ensayo."
+      },
+      {
+        "tipo": "Empieza por Q",
+        "definicion": "Alimento sólido que se obtiene a partir de la maduración de la leche",
+        "respuesta": "QUESO",
+        "pista": "Es el ingrediente favorito de los sándwiches, las pizzas y las empanadas. Se derrite con el calor."
+      },
+      {
+        "tipo": "Empieza por Q",
+        "definicion": "Sentir cariño, afecto o deseo de poseer o lograr algo",
+        "respuesta": "QUERER",
+        "pista": "Un verbo de seis letras que rima con 'aprender'. Expresa el afecto que sientes por tus amigos, familia o profesores."
+      },
+      {
+        "tipo": "Empieza por Q",
+        "definicion": "Lesión o daño en la piel causado por el fuego, el calor excesivo o la exposición al sol",
+        "respuesta": "QUEMADURA",
+        "pista": "Te ocurre en los hombros si vas a la piscina en verano y olvidas ponerte bloqueador solar."
+      },
+      {
+        "tipo": "Sala quirúrgica",
+        "definicion": "Sala quirúrgica especialmente equipada y esterilizada para realizar operaciones médicas",
+        "respuesta": "QUIROFANO",
+        "pista": "Lleva tilde en la 'I'. Es la sala ultra limpia del hospital donde operan los cirujanos bajo luces gigantes."
+      },
+      {
+        "tipo": "Contiene la Q o Empieza por Q",
+        "definicion": "Objeto portátil de tela que sirve para protegerse del sol, común en playas y jardines",
+        "respuesta": "QUITASOL",
+        "pista": "Su nombre te dice exactamente lo que hace: 'quitar' los rayos solares. Es grande y lo entierras en la arena de la playa."
+      },
+      {
+        "tipo": "Contiene la Q o Empieza por Q",
+        "definicion": "Paso estrecho o abertura profunda entre montañas o cerros formada por corrientes de agua",
+        "respuesta": "QUEBRADA",
+        "pista": "Accidente geográfico común en los cerros de Valparaíso o zonas cordilleranas. Suelen tener pequeños hilos de agua abajo."
+      },
+      {
+        "tipo": "Contiene la Q o Empieza por Q",
+        "definicion": "Planta de origen andino cuyas semillas son comestibles y altamente nutritivas",
+        "respuesta": "QUINUA",
+        "pista": "Empieza por Q. Es un superalimento ancestral del norte, similar al arroz pero con granos más pequeños y lleno de proteínas."
+      },
+      {
+        "tipo": "Contiene la Q",
+        "definicion": "Ecosistema caracterizado por una alta densidad de árboles y gran diversidad de flora y fauna",
+        "respuesta": "BOSQUE",
+        "pista": "Contiene la Q. Ecosistema natural lleno de árboles grandes, como pinos o araucarias, donde acampan las personas."
+      },
+      {
+        "tipo": "Empieza por Q",
+        "definicion": "Instrumento musical de viento tradicional de la zona andina, fabricado usualmente de caña o madera",
+        "respuesta": "QUENA",
+        "pista": "Especie de flauta muy típica de la música folclórica del norte de Chile."
+      }
+    ]
+  },
+  {
+    "letter": "R",
+    "questions": [
+      {
+        "tipo": "Empieza por R",
+        "definicion": "Acción de cumplir con los deberes, horarios y normas establecidas en el liceo",
+        "respuesta": "RESPONSABILIDAD",
+        "pista": "Un valor fundamental que demostramos al entregar las tareas a tiempo y llegar temprano a clases."
+      },
+      {
+        "tipo": "Empieza por R",
+        "definicion": "Aparato electrónico o estación que transmite música, noticias y programas por ondas de sonido",
+        "respuesta": "RADIO",
+        "pista": "Tiene 5 letras. La escuchas en el furgón escolar o en el auto en las mañanas para saber cómo está el tránsito."
+      },
+      {
+        "tipo": "Empieza por R",
+        "definicion": "Articulación de la pierna que une el fémur con la tibia y permite doblar la extremidad",
+        "respuesta": "RODILLA",
+        "pista": "La parte del cuerpo que más se raspan los niños en el colegio si se tropiezan corriendo en el patio."
+      },
+      {
+        "tipo": "Empieza por R",
+        "definicion": "Corriente natural de agua continua que fluye por la tierra hasta desembocar en el mar o en un lago",
+        "respuesta": "RIO",
+        "pista": "Palabra cortísima de 3 letras. Ejemplos en Chile: el río Biobío o el río Mapocho."
+      },
+      {
+        "tipo": "Situación de un alumno",
+        "definicion": "Situación de un alumno que debe repetir un año escolar debido a bajo rendimiento o inasistencias",
+        "respuesta": "REPITENCIA",
+        "pista": "Lo que evitas a toda costa teniendo buen comportamiento, estudiando para los exámenes y asistiendo a clases."
+      },
+      {
+        "tipo": "Contiene la R o Empieza por R",
+        "definicion": "Flores vistosas del rosal, que destacan por su aroma y sus tallos con espinas",
+        "respuesta": "ROSAS",
+        "pista": "Son flores muy románticas que se regalan en el Día de los Enamorados. ¡Cuidado al tomarlas porque pinchan!"
+      },
+      {
+        "tipo": "Contiene la R o Empieza por R",
+        "definicion": "Órgano de las plantas que crece bajo la tierra para absorber agua y fijar la planta al suelo",
+        "respuesta": "RAIZ",
+        "pista": "Palabra corta de 4 letras que termina en Z. Es la parte del árbol que nunca ves porque está enterrada firme en el suelo."
+      },
+      {
+        "tipo": "Contiene la R o Empieza por R",
+        "definicion": "Instancia periódica de citación donde los padres conversan con el profesor jefe sobre el curso",
+        "respuesta": "REUNION DE APODERADOS",
+        "pista": "Tres palabras. Ocurre una vez al mes por la tarde; ahí entregan los informes de notas y se organiza el dinero de la directiva."
+      },
+      {
+        "tipo": "Empieza por R",
+        "definicion": "Instrumento rígido y plano, de forma rectangular, que sirve para trazar líneas rectas",
+        "respuesta": "REGLA",
+        "pista": "La llevas en el estuche, usualmente mide entre 20 a 30 centímetros y es clave en clases de arte o matemáticas."
+      },
+      {
+        "tipo": "Empieza por R",
+        "definicion": "Establecimiento comercial donde se preparan y sirven comidas y bebidas para consumir allí mismo",
+        "respuesta": "RESTAURANTE",
+        "pista": "Lugar con mesas, meseros y una carta de comida a donde vas a celebrar cuando hay un evento especial."
+      }
+    ]
+  },
+  {
+    "letter": "S",
+    "questions": [
+      {
+        "tipo": "Contiene la S",
+        "definicion": "Profesional del liceo encargada de orientar y gestionar beneficios o soluciones ante problemas socioeconómicos",
+        "respuesta": "ASISTENTE SOCIAL",
+        "pista": "Dos palabras. Te ayuda a postular a becas, la tarjeta Junaeb y te orienta si tu familia pasa por un momento difícil."
+      },
+      {
+        "tipo": "Empieza por S",
+        "definicion": "Lugar del liceo donde los estudiantes se sientan en sus puestos a recibir las clases",
+        "respuesta": "SALA",
+        "pista": "Tiene 4 letras. Tiene un número asignado (ej. Sala 12), una pizarra, un escritorio para el profesor y bancos para el curso."
+      },
+      {
+        "tipo": "Empieza por S",
+        "definicion": "Estrella central de nuestro sistema planetario que nos entrega luz y calor",
+        "respuesta": "SOL",
+        "pista": "Palabra de solo 3 letras. Si no existiera, la Tierra sería un bloque de hielo oscuro. ¡Provoca el calor del verano!"
+      },
+      {
+        "tipo": "Empieza por S",
+        "definicion": "Cada uno de los dos periodos de unos seis meses en que se divide el año escolar",
+        "respuesta": "SEMESTRE",
+        "pista": "Tiene 3 sílabas. Cuando termina el primero, te dan dos semanas de vacaciones en el mes de julio."
+      },
+      {
+        "tipo": "Líquido espeso",
+        "definicion": "Líquido espeso de color rojo que circula por los vasos sanguíneos transportando oxígeno",
+        "respuesta": "SANGRE",
+        "pista": "Tiene 6 letras. Si te caes fuerte en el patio y te rompes la rodilla, es el líquido rojo que brota de la herida."
+      },
+      {
+        "tipo": "Contiene la S o Empieza por S",
+        "definicion": "Herramienta pequeña con una cuchilla interior que sirve para afilar la mina de los lápices",
+        "respuesta": "SACAPUNTAS",
+        "pista": "Palabra compuesta de 10 letras. Lo usas si estás dibujando en artes visuales y la punta de tu lápiz mina se quiebra."
+      },
+      {
+        "tipo": "Contiene la S o Empieza por S",
+        "definicion": "Necesidad biológica e inclinación a dormir que experimenta el cuerpo",
+        "respuesta": "SUEÑO",
+        "pista": "Tiene 5 letras y lleva una Ñ. Te da flojera por las mañanas si te quedaste despierto hasta tarde jugando videojuegos."
+      },
+      {
+        "tipo": "Contiene la S o Empieza por S",
+        "definicion": "Valor humano que consiste en colaborar y apoyar desinteresadamente a quien lo necesita",
+        "respuesta": "SOLIDARIDAD",
+        "pista": "Un gran valor social. Lo demuestras cuando el liceo organiza una campaña de alimentos para ayudar a una familia damnificada."
+      },
+      {
+        "tipo": "Empieza por S",
+        "definicion": "Conjunto formado por una estrella y los planetas, asteroides y cometas que giran a su alrededor",
+        "respuesta": "SISTEMA SOLAR",
+        "pista": "Dos palabras. Es nuestro 'barrio' galáctico, conformado por el Sol, la Tierra, Marte, Venus, etc."
+      },
+      {
+        "tipo": "Empieza por S",
+        "definicion": "Establecimiento comercial de gran tamaño que vende alimentos y artículos de primera necesidad",
+        "respuesta": "SUPERMERCADO",
+        "pista": "Lugar lleno de góndolas y cajas registradoras donde tomas un carrito para hacer la compra mensual de la casa."
+      }
+    ]
+  },
+  {
+    "letter": "T",
+    "questions": [
+      {
+        "tipo": "Empieza por T",
+        "definicion": "Instrumento óptico que se utiliza para observar las estrellas y planetas desde la Tierra",
+        "respuesta": "TELESCOPIO",
+        "pista": "Termina en 'O'. Es el tubo largo con lentes que inventó Galileo para mirar de cerca los cráteres de la Luna."
+      },
+      {
+        "tipo": "Empieza por T",
+        "definicion": "Herramienta manual de corte compuesta por dos hojas afiladas unidas por un eje central",
+        "respuesta": "TIJERAS",
+        "pista": "Vienen en el estuche. Tienen dos ojales para meter los dedos y sirven para recortar cartulinas en artes visuales."
+      },
+      {
+        "tipo": "Empieza por T",
+        "definicion": "Fenómeno atmosférico violento acompañado de lluvia, viento fuerte, rayos y truenos",
+        "respuesta": "TORMENTA",
+        "pista": "Ocurre mucho en invierno. Hace que se corte la luz y te den ganas de quedarte en casa tomando un té caliente."
+      },
+      {
+        "tipo": "Empieza por T",
+        "definicion": "Ruido fuerte y sónico que se produce en la atmósfera tras la descarga de un rayo",
+        "respuesta": "TRUENO",
+        "pista": "Es el sonido gigante que hace que te asustes durante la tormenta. Viene siempre unos segundos después del relámpago."
+      },
+      {
+        "tipo": "Empieza por T",
+        "definicion": "Polígono cerrado que tiene exactamente tres lados y tres ángulos",
+        "respuesta": "TRIANGULO",
+        "pista": "Figura geométrica. Su nombre te da la clue de cuántos ángulos y esquinas tiene."
+      },
+      {
+        "tipo": "Contiene la T o Empieza por T",
+        "definicion": "Recipiente pequeño con un asa que se utiliza para beber líquidos calientes como té o café",
+        "respuesta": "TAZA",
+        "pista": "Tiene 4 letras y lleva una Z. Tiene una orejita lateral para agarrarla sin quemarte los dedos con el agua hirviendo."
+      },
+      {
+        "tipo": "Contiene la T o Empieza por T",
+        "definicion": "Costumbre, hábito o creencia transmitida culturalmente de generación en generación",
+        "respuesta": "TRADICION",
+        "pista": "Lleva tilde en la O. Comer empanadas en el mes de septiembre o bailar cueca en el liceo son ejemplos de ella."
+      },
+      {
+        "tipo": "Contiene la T o Empieza por T",
+        "definicion": "Esfuerzo físico o mental realizado con el objetivo de producir bienes, servicios o cumplir metas",
+        "respuesta": "TRABAJO",
+        "pista": "Tiene 7 letras. Lo que hacen tus profesores en el liceo o lo que harás tú tras egresar de tu especialidad técnica."
+      },
+      {
+        "tipo": "Empieza por T",
+        "definicion": "Edificio o lugar destinado a la representación de obras escénicas frente a un público",
+        "respuesta": "TEATRO",
+        "pista": "Recinto cultural que tiene un gran escenario, butacas para sentarse y un telón de tela roja."
+      },
+      {
+        "tipo": "Empieza por T",
+        "definicion": "Recipiente con un aislamiento térmico especial que mantiene la temperatura de los líquidos",
+        "respuesta": "TERMO",
+        "pista": "Lo traes en la mochila al colegio si quieres tomar agua muy fría en verano, o café muy caliente en invierno."
+      }
+    ]
+  },
+  {
+    "letter": "U",
+    "questions": [
+      {
+        "tipo": "Empieza por U",
+        "definicion": "Prenda de vestir obligatoria que identifica a los estudiantes de nuestro establecimiento",
+        "respuesta": "UNIFORME",
+        "pista": "La ropa oficial del liceo que nos hace ver a todos ordenados y representa la identidad de la institución."
+      },
+      {
+        "tipo": "Empieza por U",
+        "definicion": "Fruta pequeña y redonda que crece en racimos, usada para hacer vino, jugos o pasas",
+        "respuesta": "UVA",
+        "pista": "Palabra cortísima de 3 letras. Es la fruta con la que se celebra el año nuevo a la medianoche."
+      },
+      {
+        "tipo": "Empieza por U",
+        "definicion": "Institución de educación superior a la que se puede postular tras egresar de cuarto medio",
+        "respuesta": "UNIVERSIDAD",
+        "pista": "Lugar de estudios al que postulas rindiendo la prueba PAES para sacar un título profesional como Ingeniería o Medicina."
+      },
+      {
+        "tipo": "Conjunto de todo",
+        "definicion": "Conjunto de todo lo que existe físicamente, incluyendo el espacio, el tiempo, la materia y la energía",
+        "respuesta": "UNIVERSO",
+        "pista": "Es gigantesco y no tiene fin conocido. Adentro están todas las galaxias, estrellas y planetas existentes."
+      },
+      {
+        "tipo": "Conjunto de herramientas",
+        "definicion": "Conjunto de herramientas, cuadernos y materiales necesarios para las labores escolares",
+        "respuesta": "UTILES",
+        "pista": "Lleva tilde en la 'U'. Al principio del año te entregan una lista completa de ellos para comprarlos (lápices, reglas, block)."
+      },
+      {
+        "tipo": "Contiene la U o Empieza por U",
+        "definicion": "Placa córnea, dura y transparente que cubre la parte dorsal de la punta de los dedos",
+        "respuesta": "UÑA",
+        "pista": "Palabra cortísima de 3 letras que lleva una Ñ. Los inspectores a veces revisan que estén limpias y cortas por higiene."
+      },
+      {
+        "tipo": "Contiene la U o Empieza por U",
+        "definicion": "Acción de juntar o enlazar dos o más elementos para formar un todo",
+        "respuesta": "UNION",
+        "pista": "Tiene 5 letras, termina en N con tilde. Un famoso dicho dice que ella 'hace la fuerza' al trabajar en equipo."
+      },
+      {
+        "tipo": "Contiene la U o Empieza por U",
+        "definicion": "Proceso geográfico y social de crecimiento, expansión y desarrollo de las ciudades",
+        "respuesta": "URBANIZACION",
+        "pista": "Término de la clase de Historia. Es el proceso en el que el campo se transforma en ciudad, con calles pavimentadas y edificios."
+      },
+      {
+        "tipo": "Empieza por U",
+        "definicion": "Departamento o sección de un hospital destinado a la atención médica rápida de accidentes graves",
+        "respuesta": "URGENCIA",
+        "pista": "Es el lugar al que corres en el recinto de salud si te quiebras un hueso o tienes una apendicitis."
+      },
+      {
+        "tipo": "Empieza por U",
+        "definicion": "Estándar de conexión y dispositivo de almacenamiento de datos extraíble muy usado en computación",
+        "respuesta": "USB",
+        "pista": "Siglas de tres letras. Es el famoso 'pendrive' que conectas al PC del colegio para mostrar tu presentación."
+      }
+    ]
+  },
+  {
+    "letter": "V",
+    "questions": [
+      {
+        "tipo": "Empieza por V",
+        "definicion": "Conjunto de palabras que conforman un idioma",
+        "respuesta": "VOCABULARIO",
+        "pista": "Tiene 5 sílabas. Mientras más libros lees en la clase de Lenguaje, más amplio y rico se vuelve el tuyo."
+      },
+      {
+        "tipo": "Empieza por V",
+        "definicion": "Estación del año en la que hace más calor y los estudiantes salen de vacaciones",
+        "respuesta": "VERANO",
+        "pista": "La época del año del sol, la playa, las poleras manga corta y los meses de enero y febrero libres de tareas."
+      },
+      {
+        "tipo": "Empieza por V",
+        "definicion": "Cilindro de cera o grasa con una mecha en el centro que se enciende para dar luz",
+        "respuesta": "VELA",
+        "pista": "La buscas de inmediato en la cocina junto a los fósforos cuando hay un apagón en la casa."
+      },
+      {
+        "tipo": "Empieza por V",
+        "definicion": "Abertura en la corteza terrestre por la que se expulsa magma, cenizas y gases del interior del planeta",
+        "respuesta": "VOLCAN",
+        "pista": "Lleva tilde en la 'A'. Montaña que puede entrar en erupción y tirar lava caliente hacia el exterior."
+      },
+      {
+        "tipo": "Líquido agrio",
+        "definicion": "Líquido agrio y de sabor ácido derivado de la fermentación del vino, usado para aliñar",
+        "respuesta": "VINAGRE",
+        "pista": "Huele muy fuerte y es transparente o morado. Se combina con aceite y sal para darle un sabor ácido a la ensalada de lechuga."
+      },
+      {
+        "tipo": "Contiene la V o Empieza por V",
+        "definicion": "Hembra del toro, mamífero doméstico criado para la producción de carne y leche",
+        "respuesta": "VACA",
+        "pista": "Tiene 4 letras. Pasa el día pastando en el campo, hace 'muuu' y gracias a ella tomamos leche en los desayunos."
+      },
+      {
+        "tipo": "Contiene la V o Empieza por V",
+        "definicion": "Microorganismo infeccioso que necesita de una célula hospedadora para reproducirse y causa enfermedades",
+        "respuesta": "VIRUS",
+        "pista": "Tiene 5 letras. El de la influenza o el resfrío común hacen que te sientas mal y debas faltar al liceo con licencia médica."
+      },
+      {
+        "tipo": "Contiene la V o Empieza por V",
+        "definicion": "Compuestos orgánicos esenciales en pequeñas dosis para el correcto funcionamiento del cuerpo",
+        "respuesta": "VITAMINAS",
+        "pista": "Están representadas por letras (A, B, C, D...). Las adquieres comiendo frutas y verduras para no enfermarte."
+      },
+      {
+        "tipo": "Empieza por V",
+        "definicion": "Aparato eléctrico provisto de aspas giratorias que impulsa el aire para refrescar el ambiente",
+        "respuesta": "VENTILADOR",
+        "pista": "Es lo primero que se enciende en las salas de clase cuando llega el calor insoportable de noviembre."
+      },
+      {
+        "tipo": "Empieza por V",
+        "definicion": "Profesional de la medicina especializado en el diagnóstico and tratamiento de enfermedades en los animales",
+        "respuesta": "VETERINARIO",
+        "pista": "Es el médico encargado de vacunar o curar a tus mascotas como perros y gatos."
+      }
+    ]
+  },
+  {
+    "letter": "X",
+    "questions": [
+      {
+        "tipo": "Contiene la X",
+        "definicion": "Acción que realiza un profesor para aclarar un tema y hacer que los estudiantes entiendan bien",
+        "respuesta": "EXPLICAR",
+        "pista": "Es un verbo. Lo que hace el docente en la pizarra antes de decirnos: '¿Quedó clara la materia o hay dudas?'"
+      },
+      {
+        "tipo": "Empieza por X",
+        "definicion": "Instrumento musical de percusión formado por láminas de madera o metal que suenan al golpearlas",
+        "respuesta": "XILOFONO",
+        "pista": "Empieza por X. Se toca usando una o dos baquetas con puntas de goma y suena muy agudo, como campanitas."
+      },
+      {
+        "tipo": "Contiene la X",
+        "definicion": "Gas invisible que está en el aire y que los seres humanos necesitamos respirar para vivir",
+        "respuesta": "OXIGENO",
+        "pista": "Contiene la X. Lo producen los árboles del planeta y tus pulmones lo absorben cada segundo de forma automática."
+      },
+      {
+        "tipo": "Contiene la X",
+        "definicion": "Vehículo de transporte público con conductor que realiza viajes urbanos cobrando una tarifa",
+        "respuesta": "TAXI",
+        "pista": "Contiene la X. Vehículo de la ciudad que suele ser de color negro con techo amarillo en Chile."
+      },
+      {
+        "tipo": "Contiene la X",
+        "definicion": "Viaje o recorrido corto colectiva con fines de estudio, recreación o deporte",
+        "respuesta": "EXCURSION",
+        "pista": "Contiene la X. Es cuando todo el curso sale del liceo en bus para visitar un museo, una empresa técnica o un parque nacional."
+      },
+      {
+        "tipo": "Contiene la X",
+        "definicion": "Sustancia que produce efectos perjudiciales, enfermedades o la muerte si ingresa al organismo",
+        "respuesta": "TOXICO",
+        "pista": "Lleva tilde en la O y contiene una X. Es una etiqueta de advertencia en productos de limpieza que advierte que no se deben ingerir."
+      },
+      {
+        "tipo": "Contiene la X",
+        "definicion": "Desaparición total y definitiva de todos los miembros de una especie animal o vegetal",
+        "respuesta": "EXTINCION",
+        "pista": "Contiene la X. Es el proceso irreversible que sufrieron los dinosaurios y que hoy amenaza a los animales en peligro."
+      },
+      {
+        "tipo": "Contiene la X",
+        "definicion": "Conjunto de enunciados o palabras con sentido completo escritos en un documento o libro",
+        "respuesta": "TEXTO",
+        "pista": "Contiene la X y tiene solo 5 letras. Lo que lees en las guías de estudio o en los libros de la biblioteca."
+      },
+      {
+        "tipo": "Contiene la X",
+        "definicion": "Hueso plano y alargado situado en la parte central y delantera del pecho",
+        "respuesta": "TORAX",
+        "pista": "Termina en X. Es la región anatómica del cuerpo humano comprendida entre el cuello y el abdomen."
+      },
+      {
+        "tipo": "Contiene la X",
+        "definicion": "Persona que practica profesionalmente el deporte de combate en un cuadrilátero",
+        "respuesta": "BOXEADOR",
+        "pista": "Contiene la X. Deportista que compite golpeando con grandes guantes acolchados sobre un ring."
+      }
+    ]
+  },
+  {
+    "letter": "Y",
+    "questions": [
+      {
+        "tipo": "Contiene la Y",
+        "definicion": "Árbol nativo del sur de Chile, conocido por su corteza de color rojizo y flores blancas",
+        "respuesta": "ARRAYAN",
+        "pista": "Lleva dos letras 'A' y una 'Y'. Árbol hermoso del sur chileno, famoso por crecer cerca del agua y tener ramas color canela."
+      },
+      {
+        "tipo": "Empieza por Y",
+        "definicion": "Alimento lácteo cremoso que se obtiene de la fermentación de la leche",
+        "respuesta": "YOGUR",
+        "pista": "Es blanco o de sabores frutales, viene en vasito y muchos estudiantes lo traen de colación junto con cereal."
+      },
+      {
+        "tipo": "Contiene la Y",
+        "definicion": "Escrito en prosa en el cual el autor desarrolla sus ideas sobre un tema determinado",
+        "respuesta": "ENSAYO",
+        "pista": "Contiene la Y. Tarea común en Lenguaje e Historia donde debes argumentar tu opinión sobre un tema o un libro."
+      },
+      {
+        "tipo": "Contiene la Y",
+        "definicion": "Persona encargada de apoyar las labores pedagógicas o de orden dentro de la sala de clases",
+        "respuesta": "AYUDANTE",
+        "pista": "Contiene la Y. Estudiante de cursos superiores o profesional que asiste al profesor a revisar tareas o guías."
+      },
+      {
+        "tipo": "Empieza por Y",
+        "definicion": "Plataforma web de origen estadounidense dedicada a compartir y reproducir videos",
+        "respuesta": "YOUTUBE",
+        "pista": "Empieza por Y. La aplicación donde buscas tutoriales para resolver ejercicios difíciles de matemáticas o ver videos de música."
+      },
+      {
+        "tipo": "Empieza por Y",
+        "definicion": "Vendaje endurecido con polvo de sulfato de calcio que se usa para inmovilizar huesos fracturados",
+        "respuesta": "YESO",
+        "pista": "Tiene 4 letras. Si te quiebras un brazo jugando, te ponen este armazón blanco y duro donde todos tus amigos te firman."
+      },
+      {
+        "tipo": "Empieza por Y",
+        "definicion": "Porción central, esférica y de color amarillo que se encuentra dentro del huevo",
+        "respuesta": "YEMA",
+        "pista": "Tiene 4 letras. Es la parte amarilla del huevo que viene rodeada por la clara y contiene muchas proteínas."
+      },
+      {
+        "tipo": "Empieza por Y",
+        "definicion": "Lugar geológico donde se encuentran acumulados de forma natural minerales, fósiles o petróleo",
+        "respuesta": "YACIMIENTO",
+        "pista": "Término minero e industrial. Es la zona geográfica subterránea rica en cobre, carbón o recursos naturales valiosos."
+      },
+      {
+        "tipo": "Empieza por Y",
+        "definicion": "Embarcación a motor o a vela, de lujo y gran tamaño, utilizada para viajes de recreo",
+        "respuesta": "YATE",
+        "pista": "Es un barco muy lujoso y costoso, normalmente asociado a vacaciones de millonarios."
+      },
+      {
+        "tipo": "Contiene la Y",
+        "definicion": "Artista de circo que hace reír al público con sus bromas, vestuario extravagante y maquillaje",
+        "respuesta": "PAYASO",
+        "pista": "Contiene la Y. Suele usar zapatos gigantes, peluca colorida y una gran nariz redonda de color rojo."
+      }
+    ]
+  },
+  {
+    "letter": "Z",
+    "questions": [
+      {
+        "tipo": "Empieza por Z",
+        "definicion": "Calzado deportivo indispensable para realizar de forma segura las actividades en el gimnasio",
+        "respuesta": "ZAPATILLAS",
+        "pista": "Tienen cordones, suela de goma y son obligatorias los días que te toca la clase de Educación Física."
+      },
+      {
+        "tipo": "Empieza por Z",
+        "definicion": "Planta de raíz alargada y de color naranja que se consume como verdura",
+        "respuesta": "ZANAHORIA",
+        "pista": "Contiene una 'H' intermedia. Es la verdura favorita de los conejos y es excelente para la vista."
+      },
+      {
+        "tipo": "Empieza por Z",
+        "definicion": "Animal mamífero carnívoro de la familia de los caninos, con orejas puntiagudas y cola peluda",
+        "respuesta": "ZORRO",
+        "pista": "Animal astuto de los bosques chilenos (como el zorro Chilla o Culpeo) que tiene un pelaje hermoso y orejas alerta."
+      },
+      {
+        "tipo": "Empieza por Z",
+        "definicion": "Lugar del establecimiento señalizado y destinado a resguardar la seguridad en caso de sismo",
+        "respuesta": "ZONA SEGURA",
+        "pista": "Dos palabras. Es el círculo verde pintado en el suelo del patio donde el curso debe reunirse ordenadamente si tiembla."
+      },
+      {
+        "tipo": "Empieza por Z",
+        "definicion": "Líquido que se extrae de las frutas o hierbas por presión, destilación o disolución",
+        "respuesta": "ZUMO",
+        "pista": "Palabra de 4 letras. Es el sinónimo de 'jugo' que se usa mucho en los doblajes de televisión de España."
+      },
+      {
+        "tipo": "Empieza por Z",
+        "definicion": "Parque o recinto acondicionado para la conservación, estudio y exhibición de animales salvajes",
+        "respuesta": "ZOOLOGICO",
+        "pista": "Tiene doble letra 'O' al principio. Es el recinto urbano donde puedes ver jirafas, leones, elefantes y monos."
+      },
+      {
+        "tipo": "Empieza por Z",
+        "definicion": "Sonido agudo continuo y monótono que producen algunos insectos voladores al batir las alas",
+        "respuesta": "ZUMBIDO",
+        "pista": "Es el molesto ruido que escuchas cerca del oído por la noche cuando hay un zancudo volando en tu pieza."
+      },
+      {
+        "tipo": "Empieza por Z",
+        "definicion": "Mineral o piedra preciosa de gran dureza, valorada en joyería y de color azul característico",
+        "respuesta": "ZAFIRO",
+        "pista": "Piedra preciosa brillante y muy costosa que destaca internacionalmente por su hermoso color azul profundo."
+      },
+      {
+        "tipo": "Empieza por Z",
+        "definicion": "Profesional artesano cuyo oficio es la fabricación o reparación de calzado",
+        "respuesta": "ZAPATERO",
+        "pista": "Persona a la que tus papás llevan el zapato del colegio para que le ponga una suela nueva si se rompe."
+      }
+    ]
+  }
+]
